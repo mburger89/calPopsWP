@@ -1,0 +1,2097 @@
+/*
+Theme Name: calPops
+Theme URI: http://underscores.me/
+Author: Max Burger
+Author URL: http://www.maxburgerdesign.com
+Description: CSS for calPops wordPress
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: calPops
+Domain Path: /languages/
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+ calPops is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
+
+Resetting and rebuilding styles have been helped along thanks to the fine work of
+Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
+along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+and Blueprint http://www.blueprintcss.org/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 - Reset
+2.0 - Typography
+3.0 - Elements
+4.0 - Forms
+5.0 - Navigation
+	5.1 - Links
+	5.2 - Menus
+6.0 - Accessibility
+7.0 - Alignments
+8.0 - Clearings
+9.0 - Widgets
+9.5 - index.php
+10.0 - Content
+	10.1 - Posts and pages
+	10.2 - upComingShow
+	10.3 - Asides
+	10.4 - Comments
+	10.5 - About the pops
+11.0 - Infinite scroll
+12.0 - Media
+	12.1 - Captions
+	12.2 - Galleries
+12.5 Extra fixes
+13.0 Media Queries
+--------------------------------------------------------------*/
+@font-face {
+    font-family: 'honest_johnsregular';
+    src: url('honej___-webfont.eot');
+    src: url('honej___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('honej___-webfont.woff') format('woff'),
+         url('honej___-webfont.ttf') format('truetype'),
+         url('honej___-webfont.svg#honest_johnsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*--------------------------------------------------------------
+1.0 - Reset
+--------------------------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;
+	font-family: inherit;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+html {
+	font-size: 62.5%; /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
+	overflow-y: scroll; /* Keeps page centered in all browsers regardless of content height */
+	-webkit-text-size-adjust: 100%; /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
+	-ms-text-size-adjust:     100%; /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+}
+
+*,
+*:before,
+*:after { /* apply a natural box layout model to all elements; see http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+	-webkit-box-sizing: border-box; /* Not needed for modern webkit but still used by Blackberry Browser 7.0; see http://caniuse.com/#search=box-sizing */
+	-moz-box-sizing:    border-box; /* Still needed for Firefox 28; see http://caniuse.com/#search=box-sizing */
+	box-sizing:         border-box;
+}
+
+body {
+	background: #fff; /* Fallback for when there is no custom background color defined. */
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+	display: block;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+table { /* tables still need 'cellspacing="0"' in the markup */
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+caption,
+th,
+td {
+	font-weight: normal;
+	text-align: left;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+}
+
+blockquote,
+q {
+	quotes: "" "";
+}
+
+a:focus {
+	outline: thin dotted;
+}
+
+a:hover,
+a:active {
+	outline: 0;
+	color: #00AEEF;
+}
+
+a img {
+	border: 0;
+}
+
+/*--------------------------------------------------------------
+2.0 Typography
+--------------------------------------------------------------*/
+body, button, input, select, textarea {
+	color: #404040;
+	font-family: sans-serif;
+	font-size: 16px;
+	font-size: 1.6rem;
+	line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+
+p {
+	font-family: 'Helvetica Neue', Helvetica, sans-serif;
+	margin-bottom: 8px;
+
+}
+
+b, strong {
+	font-weight: bold;
+}
+
+dfn, cite, em, i {
+	font-style: italic;
+}
+
+blockquote {
+	margin: 0 1.5em;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+pre {
+	background: #eee;
+	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-size: 15px;
+	font-size: 1.5rem;
+	line-height: 1.6;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+
+code, kbd, tt, var {
+	font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+
+abbr,
+acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+mark,
+ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+
+sup,
+sub {
+	font-size: 75%;
+	height: 0;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	bottom: 1ex;
+}
+
+sub {
+	top: .5ex;
+}
+
+small {
+	font-size: 75%;
+}
+
+big {
+	font-size: 125%;
+}
+h2{
+	font-size: 20px;
+	letter-spacing: .0625em;
+	font-weight: bold;
+}
+h3{
+	font-size: 14px;
+	letter-spacing: .0625em;
+	font-weight: bold;
+}
+.site-branding{
+	font-size: 20px;
+	color: #fff;
+	background-image: url("images/logo.png");
+	width: 800px;
+	height: 60px;
+	background-repeat: no-repeat;
+}
+.buyBTN {
+	color: #fff;
+	font-size: 20px;
+	letter-spacing: .125em;
+}
+.buyBTN2 {
+	color: #fff;
+	font-size: 14px;
+	letter-spacing: .125em;
+}
+.headerP p{
+margin-bottom: 10px;	
+}
+.writenWith{
+	color: #A0A0A0;
+	text-decoration: none;
+	margin-left: 125px;
+}
+a.writenWith:visited{
+	color: #A0A0A0;
+	text-decoration: none;
+	margin-left: 125px;
+}
+.writenBy{
+	color: #A0A0A0;
+	text-decoration: none;
+}
+a.writenBy:visited{
+	color: #A0A0A0;
+	text-decoration: none;
+}
+div.site-info{
+	font-size: .75em;
+	text-decoration: none;
+	color: #ACACAC;
+	letter-spacing: .0625em;
+}
+div.site-info a:hover{
+	text-decoration: none;
+	color: #00AEEF;	
+}
+.entry-title {
+	font-size: 20px;
+	text-decoration: none;
+	color: black;
+	margin-bottom: -5px;
+	margin-right: 50px;
+	
+}
+.entry-title a{
+	font-size: 20px;
+	color: #000;
+}
+h1.entry-title a:hover{
+	color: #00AEEF;
+}
+.entry-title a:visited{
+	font-size: 20px;
+	color: #000;
+}
+.entry-title0 {
+	font-size: 20px;
+	text-decoration: none;
+	color: black;
+	margin-bottom: -5px;
+	
+}
+.entry-title0 a{
+	font-size: 20px;
+	color: #000;
+	margin-right: 20px;
+}
+h1.entry-title0 a:hover{
+	color: #00AEEF;
+}
+.entry-title0 a:visited{
+	font-size: 20px;
+	color: #000;
+}
+.entry-meta{
+	font-size: 10px;
+	letter-spacing: .0625em;
+	margin-bottom: 10px;
+	color: #262626;
+}
+.entry-content{
+	font-size: 12px;
+	letter-spacing: .0625em;
+	line-height: 1.25em;
+	color: #262626;
+}
+.postcontainer img{
+	width: 200px;
+}
+.cat-links{
+	display: none;
+}
+.comments-link{
+	font-size: 10px;
+	letter-spacing: .125em;
+	display: none;
+}
+.entry-footer{
+	font-size: 10px;
+	letter-spacing: .125em;
+	display: none;
+}
+.postsTittle{
+	font-size: 30px;
+	margin-left: 125px;
+	letter-spacing: .0625em;
+	color: #00AEEF;
+}
+a.buyBTN {
+	color: #fff;
+	font-size: 20px;
+	letter-spacing: .125em;
+}
+a:visited.buyBTN {
+	color: #fff;
+	font-size: 20px;
+	letter-spacing: .125em;
+}
+a:hover.buyBTN {
+	color: #eee;
+	font-size: 20px;
+	letter-spacing: .125em;
+}
+a:visited.buyBTN2{
+	color: #fff;
+}
+a:hover.buyBTN2{
+	color: #eee;
+}
+.headerT{
+	position: relative;
+	left: 125px;
+	font-size: 125px;
+	color: #00AEEF;
+	font-weight: bold;
+	top: 125px;
+	line-height: 120px;
+}
+.headerS{
+	position: relative;
+	left: 125px;
+	font-size: 80px;
+	color: #00AEEF;
+	font-weight: bold;
+	top: 125px;
+	line-height: 75px;
+}
+.ticketPrices{
+	width: 555px;
+	height: 425px;
+	margin-left: 600px;
+	position: relative;
+	margin-top: -15px;
+}
+.ticketPrices td{
+	width: 200px;
+	text-align: center;
+	border: .125em;
+	border-color: #000;
+	border-width: 10px;
+	}
+.ticketPrices i{
+	font-size: 10px;
+}
+.ticketPrices p{
+	font-weight: normal;
+	font-size: 12px;
+}
+.tickets{
+	margin-top: -50px;
+	margin-left: -10px;
+}
+.ticketPrices tr{
+	border-bottom: 2px solid #000;
+	border-style: solid;
+}
+#boxOffice p{
+	font-size: 12px;
+	letter-spacing: .0625em;
+}
+/*--------------------------------------------------------------
+3.0 Elements
+--------------------------------------------------------------*/
+hr {
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+
+ul,
+ol {
+	margin: 0 0 1.5em 3em;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}
+
+img {
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */
+	border-radius: 10px; /* gives all img an radiused edge*/
+}
+
+figure {
+	margin: 0;
+}
+
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+}
+
+th {
+	font-weight: 600;
+	font-size: 14px;
+	letter-spacing: .0625em;
+}
+td{
+	font-size: 14px;
+}
+
+/*--------------------------------------------------------------
+4.0 Forms
+--------------------------------------------------------------*/
+button,
+input,
+select,
+textarea {
+	font-size: 100%; /* Corrects font size not being inherited in all browsers */
+	margin: 0; /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
+	vertical-align: baseline; /* Improves appearance and consistency in all browsers */
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: 1px solid;
+	border-color: #ccc #ccc #bbb;
+	border-radius: 3px;
+	background: #e6e6e6;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
+	color: #00AEEF;
+	cursor: pointer; /* Improves usability and consistency of cursor style between image-type 'input' and others */
+	-webkit-appearance: button; /* Corrects inability to style clickable 'input' types in iOS */
+	font-size: 12px;
+	font-size: 1.2rem;
+	line-height: 1;
+	padding: .6em 1em .4em;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+	border-color: #ccc #bbb #aaa;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
+	color: #00AEEF;
+}
+
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+button:active,
+input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active {
+	border-color: #aaa #bbb #bbb;
+	box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	padding: 0; /* Addresses excess padding in IE8/9 */
+}
+
+input[type="search"] {
+	-webkit-appearance: textfield; /* Addresses appearance set to searchfield in S5, Chrome */
+	-webkit-box-sizing: content-box; /* Addresses box sizing set to border-box in S5, Chrome (include -moz to future-proof) */
+	-moz-box-sizing:    content-box;
+	box-sizing:         content-box;
+}
+
+input[type="search"]::-webkit-search-decoration { /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
+	-webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner { /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
+	border: 0;
+	padding: 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+	color: #666;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+textarea:focus {
+	color: #111;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"] {
+	padding: 3px;
+}
+
+textarea {
+	overflow: auto; /* Removes default vertical scrollbar in IE6/7/8/9 */
+	padding-left: 3px;
+	vertical-align: top; /* Improves readability and alignment in all browsers */
+	width: 100%;
+}
+
+/*--------------------------------------------------------------
+5.0 Navigation
+--------------------------------------------------------------*/
+#site-navigation{
+	height: 50px;
+	background-color: #464646;
+}
+.headerSS{
+	height: 395px;
+	overflow: hidden;
+	/*background-image: url(images/calPopsHeaderimage.png);*/
+	background-color: #000;
+}
+.site-branding{
+	position: absolute;
+	top: 60px;
+	left: 50px;
+	z-index: 1500;
+}
+.site-footer{
+	height: 100px;
+	background-color: #464646;
+	color: #fff;
+}
+.nav-links {
+	clear: both;
+	display: inline-block;
+	margin-top: 0px;
+}
+.nav-next{
+	background-color: #464646;
+	border-radius: 5px;
+	max-width: 250px;
+	padding: 3px;
+	font-size: 12px;
+	margin-left: 890px;
+	margin-top: -25px;
+}
+.nav-previous{
+	background-color: #464646;
+	border-radius: 5px;
+	max-width: 250px;
+	padding: 3px;
+	font-size: 12px;
+}
+
+div.nav-next a{
+	color: #fff;
+}
+div.nav-previous a{
+	color: #fff;
+}
+
+/*--------------------------------------------------------------
+5.1 Links
+--------------------------------------------------------------*/
+
+a {
+	color: #262626;
+	font-weight: nomral;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #262626;
+}
+
+a:hover,
+a:focus,
+a:active {
+	color: #00AEEF;
+	text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+5.2 Menus
+--------------------------------------------------------------*/
+.main-navigation {
+	clear: both;
+	display: block;
+	float: left;
+	width: 100%;
+	height: 30px;
+	background-color: #464646;
+
+}
+.main-navigation ul {
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+	margin-left: 30px;
+}
+.main-navigation li {
+	float: left;
+	position: relative;
+	padding-left: 60px;
+	padding-top: 15px;
+}
+.main-navigation a {
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	font-size: 15px;
+	letter-spacing: .125em;
+}
+.main-navigation ul ul {
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+	float: left;
+	position: absolute;
+	top: 1.5em;
+	left: -999em;
+	z-index: 99999;
+}
+.main-navigation ul ul ul {
+	left: -999em;
+	top: 0;
+}
+.main-navigation ul ul a {
+	text-decoration: none;
+}
+.main-navigation ul ul li {
+}
+.main-navigation li:hover > a {
+	color: #00AEEF;
+}
+.main-navigation ul ul :hover > a {
+}
+.main-navigation ul ul a:hover {
+}
+.main-navigation ul li:hover > ul {
+	left: auto;
+}
+.main-navigation ul ul li:hover > ul {
+	left: 100%;
+}
+.main-navigation .current_page_item a,
+.main-navigation .current-menu-item a {
+}
+.footerNav{
+	height: 30px;
+	background-color: #464646;
+}
+.menu-item{
+	padding-bottom: 5px;
+	display: block;
+	padding-right: 30px;
+}
+ul.sub-menu{
+	width: 350px;
+	margin-top: 15px;
+	border-radius: 10px;
+	margin-left: -60px;
+}
+.sub-menu{
+	margin-top: 10px;
+	background-color: #464646;
+}
+a.sub-menu{
+	margin-right: 20px;
+}
+.meta-nav{
+	display: block;
+}
+/* Small menu *//*-------------------------------------------------*/
+.menu-toggle {
+	display: none;
+}
+
+@media screen and (max-width: 600px) {
+	.menu-toggle,
+	.main-navigation.toggled .nav-menu {
+		display: block;
+	}
+
+	.main-navigation ul {
+		display: none;
+	}
+}
+
+.site-main .comment-navigation,
+.site-main .paging-navigation,
+.site-main .post-navigation {
+	margin: 0 0 1.5em;
+
+}
+
+.comment-navigation .nav-previous,
+.paging-navigation .nav-previous,
+.post-navigation .nav-previous {
+	float: left;
+	width: 50%;
+}
+
+.comment-navigation .nav-next,
+.paging-navigation .nav-next,
+.post-navigation .nav-next {
+	float: right;
+	text-align: right;
+	width: 50%;
+}
+
+/*--------------------------------------------------------------
+6.0 Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar */
+}
+
+/*--------------------------------------------------------------
+7.0 Alignments
+--------------------------------------------------------------*/
+body{
+	background-color: #000;
+}
+#page{
+	width: 1270px;
+	margin: 0 auto;
+	padding: 0;
+	background-color: #fff;
+}
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin: 0 auto;
+}
+#main{
+	margin-left: 60px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+#colophon{
+	margin-top: 30px;
+}
+.leftBox{
+	margin-left: 135px;
+	margin-top: -100px;
+	width: 400px;
+}
+#boxOffice h1{
+	margin-top: -20px;
+}
+#bOffice{
+	margin-top: -100px;
+}
+#bOffice2{
+	margin-top: -100px;
+}
+.rightBox{
+	margin-top: -115px;
+	width: 555px;
+	margin-left: 600px;
+	position: relative;
+}
+#how2{
+	margin-top: -225px;
+}
+#how3{
+	margin-top: -125px;
+}
+
+/*--------------------------------------------------------------
+8.0 Clearings
+--------------------------------------------------------------*/
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+	content: '';
+	display: table;
+}
+
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+	clear: both;
+}
+
+/*--------------------------------------------------------------
+9.0 Widgets
+--------------------------------------------------------------*/
+.widget {
+	margin: 0 0 1.5em;
+}
+/* Make sure select elements fit in widgets */
+.widget select {
+	max-width: 100%;
+}
+/* Search widget */
+.widget_search .search-submit {
+	display: none;
+}
+/*--------------------------------------------------------------
+9.5  index.php
+--------------------------------------------------------------*/
+.headerP{
+	width: 555px;
+	height: 425px;
+	margin-left: 600px;
+	position: relative;
+	margin-top: -80px;
+}
+.buyBTN{
+	width: 300px;
+	height: 55px;
+	margin-top: -55px;
+	padding-left: 80px;
+	padding-top: 13px;
+	background-color: #00AEEF;
+	border-radius: 10px;
+	float: right;
+	margin-right: 100px;
+	box-shadow: 0 3px 3px -1px #C2C2C2;
+}
+.buyBTN2{
+	width: 150px;
+	height: 40px;
+	margin-top: -50px;
+	float: right;
+	padding-left: 30px;
+	padding-top: 10px;
+	background-color: #00AEEF;
+	border-radius: 10px;
+	box-shadow: 0 3px 3px -1px #C2C2C2;
+}
+
+/*--------------------------------------------------------------
+10.0 Content
+--------------------------------------------------------------*/
+article{
+	display: block;
+	padding: 10px;
+	color: #fff;
+	overflow: hidden;
+	padding-bottom: 10px;
+}
+.postBox{
+	margin-left:100px;
+}
+.postcontainer{
+	width: 300px;
+	margin-left: 10px;
+	margin-top: 10px;
+	display: block;
+	float: left;
+	overflow: hidden;
+	height: 320px;
+	border-radius: 10px;
+	box-shadow: 0 3px 3px -1px #C2C2C2;
+	background-color: #EBEBEB;
+	word-wrap: break-word;
+	margin-bottom: 0px;
+}
+.postcontainer2{
+	width: 800px;
+	margin: 0 auto;
+	margin-top: 20px;
+	border-radius: 10px;
+	box-shadow: 0 3px 3px -1px #C2C2C2;
+	background-color: #EBEBEB;
+	margin-bottom: 20px;
+	word-wrap: break-word;
+}	
+.entry-content2{
+	color: #333;
+	font-size: 12px;
+	letter-spacing: .0625em;
+	line-height: 1.25em;
+	color: #262626;
+}
+
+form.search-form{
+	display: none;
+}
+div.ticketPrices a.buyBTN2{
+	margin-top: 0px;
+	margin-right: 150px;
+	margin-bottom: 20px;
+}
+.donate{
+	width: 200px;
+	height: 40px;
+	float: left;
+	padding-left: 25px;
+	padding-top: 11px;
+	background-color: #00AEEF;
+	border-radius: 10px;
+	box-shadow: 0 3px 3px -1px #C2C2C2;
+	color: #fff;
+	letter-spacing: 0.0625em;
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+a.donate:visited{
+	color: #fff;
+}
+a.donate:hover{
+	color: #eee;
+}
+.benifitsOfSub h2{
+	margin-bottom: 0px;
+	margin-top: 20px;
+}
+.benifitsOfSub p{
+	letter-spacing: .0625em;
+}
+#pageVenue{
+	height: 2000px;
+}
+#how4{
+	margin-top: -310px;
+}
+.rightBox2{
+	margin-top: -125px;
+	width: 555px;
+	margin-left: 700px;
+	position: relative;
+}
+.leftBox2{
+	top: 1080px;
+	margin-left: 175px;
+	width: 500px;
+	position: absolute;
+}
+.seatingImage{
+	background-image: url("images/smithwick-seating-plan-6x6-web-1.jpg");
+	width:435px;
+	height:435px;
+	display: block;
+	background-repeat: no-repeat;
+	margin-left: 65px;
+}
+.theaterView{
+	background-image: url("images/rear-ctr-seat-smithwick-lr-1.jpg");
+	width: 500px;
+	height: 400px;
+	margin-top: 150px;
+	display: block;
+	background-repeat: no-repeat;
+}
+.theaterView2{
+	background-image: url("images/flseat-smithwick-lr.jpg");
+	width: 500px;
+	height: 400px;
+	margin-top: 90px;
+	display: block;
+	background-repeat: no-repeat;
+}
+.theaterView3{
+	background-image: url("images/rear-ctr-seat-smithwick-lr-1.jpg");
+	width: 500px;
+	height: 400px;
+	display: block;
+	background-repeat: no-repeat;
+}
+.theaterView4{
+	background-image: url("images/ftctrseat-smithwick-lr.jpg");
+	width: 500px;
+	height: 400px;
+	display: block;
+	background-repeat: no-repeat;
+	
+}
+.imagecap2{
+	font-size: 10px;
+	position: relative;
+	display: block;
+	top: -20px;
+}
+.legalInfo{
+	width: 800px;
+}
+.emailSub{
+	width: 350px;
+	background-color: #eee;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+/*--------------------------------------------------------------
+10.1 Posts and pages
+--------------------------------------------------------------*/
+.sticky {
+	display: block;}
+/*.hentry {
+	margin: 0 0 1.5em;}*/
+.byline,
+.updated:not(.published) {
+	display: none;}
+.single .byline,
+.group-blog .byline {
+	display: inline;}
+.page-links {
+	clear: both;}
+
+
+.image{
+	display: block;
+	background-image: url("images/smithwick-theatre-lr.JPG");
+	background-repeat: no-repeat;
+	width: 432px;
+	height: 324px;
+	margin-left: 125px;
+	margin-top: -150px;
+	border-radius: 10px;
+}
+.imagecap{
+	font-size: 10px;
+	margin-left: 125px;
+}
+#primary2{
+	height: 1000px;
+}
+#boxOffice{
+	height: 1500px;
+}
+.rightBox p{
+	margin-bottom: 5px;
+}
+
+/*------------------------------- Directions and visitor info-------------------------------*/
+.calPopsF{
+	background-image: url()
+}
+.DVcopy{
+	margin-left: 100px;
+	width: 800px;
+
+}
+.map{
+	margin-top: 5px;
+	margin-left: 130px;
+}
+.parkingLot{
+	background-image: url("images/smithwick-parkingp1-lr.jpg");
+	height: 612px;
+	width: 792px;
+	display: block;
+	background-repeat: no-repeat;
+	margin-top: 0px;
+	border-color: #ccc;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 10px;
+}
+.parkingLot2{
+	background-image: url("images/smithwick-parkingsat-lr.jpg");
+	height: 614px;
+	width: 792px;
+	display: block;
+	background-repeat: no-repeat;
+	margin-top: 25px;
+	border-color: #ccc;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 10px;
+}
+#parking{
+	margin-top: 100px;
+	
+}
+#pageDirections{
+	height: 2300px;
+}
+/*------------------Other Visitor Information----------------------*/
+#seatingM{
+	margin-top: -450px;
+	margin-left: 80px;
+
+}
+.seatingImage2{
+	background-image: url("images/smithwick-seating-plan-6x6-web-1.jpg");
+	width:435px;
+	height:435px;
+	display: block;
+	background-repeat: no-repeat;
+}
+/*------------------Support Cal Pops-----------------------------------*/
+#SupportDonate{
+	margin-left: 20px;
+	margin-top: -50px;
+}
+#how4{
+	margin-top: -250px;
+}
+.supportType{
+	padding-top: 20px;
+	margin-left: 20px;
+}
+#supportCalPops{
+	height: 2500px;
+}
+.mainCopy{
+	margin-top: 20px;
+	margin-left: 110px;
+	width: 800px;
+}
+/*------------------Support Save the music-----------------------------------*/
+#adjustType{
+	margin-top: -15px;
+}
+/*--------------------------------------------------------------
+10.2 upComingShow
+--------------------------------------------------------------*/
+.upComingShow{
+	width: 610px;
+	height: 650px;
+	background-color: #EBEBEB;
+	border-radius: 10px;
+	float:left;
+	margin-top: 10px;
+	margin-left: 10px;
+	padding-left: 10px;
+	padding-top: 0px;
+	overflow: hidden;
+	box-shadow: 0 3px 3px -1px #C2C2C2;
+}
+.entry-title2 {
+	font-size: 20px;
+	text-decoration: none;
+	color: black;
+	margin-bottom: -5px;
+	}
+.entry-title2 a{
+	font-size: 30px;
+	color: #000;
+}
+h1.entry-title2 a:hover{
+	color: #00AEEF;
+}
+.entry-title2 a:visited{
+	font-size: 30px;
+	color: #000;
+}
+.entry-content3{
+	font-size: 12px;
+	letter-spacing: .0625em;
+	line-height: 1.25em;
+	color: #262626;
+}
+.upComingShow img{
+	min-height: 300px;
+	min-width: 500px;
+}
+.entry-meta2{
+	font-size: 10px;
+	letter-spacing: .0625em;
+	margin-bottom: 10px;
+	color: #262626;
+	margin-top: 10px;
+}
+.entry-content3 p{
+	float: left;
+	margin-bottom: 3px;
+}
+
+/*--------------------------------------------------------------
+10.3 Asides
+--------------------------------------------------------------*/
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+	display: none;
+}
+
+/*--------------------------------------------------------------
+10.4 Comments
+--------------------------------------------------------------*/
+.comment-content a {
+	word-wrap: break-word;
+}
+
+.bypostauthor {
+	display: block;
+}
+#respond{
+	display: none;
+}
+/*--------------------------------------------------------------
+10.5 About the Pops
+--------------------------------------------------------------*/
+#AboutPops{
+	height: 2000px;
+}
+#main2{
+	margin-top: 300px;
+	margin-left: 125px;
+}
+.americanOrch{
+	background-image: url(images/LAO.jpg);
+	width: 210px;
+	height: 130px;
+	display: block;
+	float: right;
+	margin-top: -70px;
+	background-repeat: no-repeat;
+}
+.acso{
+	width: 314px;
+	height: 65px;
+	background-image: url(images/acso.gif);
+	display: block;
+	margin-top: 10px;
+	float: right;
+
+}
+.kimsImg{
+	background-image: url("images/IMG_3328kim xmas 07.jpg");
+	width: 500px;
+	height: 400px;
+	overflow:hidden;
+	display: block;
+	background-repeat: no-repeat;
+	top: 1050px;
+	margin-left: -50px;
+	border-radius: 10px;
+	position: absolute;
+}
+.rightBox3{
+	margin-top: -225px;
+	width: 600px;
+	margin-left: 600px;
+	position: relative;
+}
+#AboutPops p{
+	font-size: 12px;
+}
+.moreInfo{
+	margin-left: 200px;
+	padding-top: 20px;	
+}
+.SFP{
+	padding-top: 20px;
+	margin-left: 20px;
+	padding-bottom: 10px;
+}
+/*---------------------------raves and reviews--------------------------------*/
+.ravesP{
+	width: 525px;
+	height: 425px;
+	margin-left: 700px;
+	position: relative;
+	margin-top: -150px;
+}
+.raves{
+	width: 800px;
+	background-color: #EBEBEB;
+	border-radius: 10px;
+	margin-top: 10px;
+	margin-left: 10px;
+	padding: 15px;
+	box-shadow: 0 3px 3px -1px #C2C2C2;
+}
+.entry-title3 {
+	font-size: 20px;
+	text-decoration: none;
+	color: black;
+	margin-bottom: -5px;
+	line-height: 25px;
+	}
+.entry-title3 a{
+	font-size: 30px;
+	color: #000;
+}
+h1.entry-title3 a:hover{
+	color: #00AEEF;
+}
+.entry-title3 a:visited{
+	font-size: 30px;
+	color: #000;
+}
+.entry-content4{
+	font-size: 10px;
+	letter-spacing: .0625em;
+	line-height: 1.25em;
+	color: #262626;
+}
+.raves img{
+	min-height: 50px;
+	max-height: 100px;
+	min-width: 50px;
+	max-width: 100px;
+	display: block;
+}
+.entry-meta3{
+	font-size: 10px;
+	letter-spacing: .0625em;
+	margin-bottom: 10px;
+	color: #262626;
+	margin-top: 10px;
+}
+.entry-content4 p{
+	margin-top: 10px;
+	margin-bottom: 2px;
+	padding-right: 20px;
+	font-size: 12px;
+}
+
+/*--- Save the music---------------------------------------------*/
+.saveTheMusicP{
+	width: 555px;
+	height: 425px;
+	margin-left: 650px;
+	position: relative;
+	margin-top: -150px;
+	margin-bottom: -20px;
+}
+.saveTheMusicH{
+	padding-bottom: 50px;
+
+}
+.saveTheMusic{
+	width: 800px;
+	background-color: #EBEBEB;
+	border-radius: 10px;
+	margin-top: 10px;
+	margin-left: 10px;
+	padding: 15px;
+	box-shadow: 0 3px 3px -1px #C2C2C2;
+}
+.entry-title4 {
+	font-size: 20px;
+	text-decoration: none;
+	color: black;
+	margin-bottom: -5px;
+	line-height: 32px;
+	}
+.entry-title4 a{
+	font-size: 30px;
+	color: #000;
+}
+h1.entry-title4 a:hover{
+	color: #00AEEF;
+}
+.entry-title4 a:visited{
+	font-size: 30px;
+	color: #000;
+}
+.entry-content5{
+	font-size: 10px;
+	letter-spacing: .0625em;
+	line-height: 1.25em;
+	color: #262626;
+
+}
+.saveTheMusic img{
+	min-height: 50px;
+	max-height: 300px;
+	min-width: 50px;
+	max-width: 300px;
+	display: block;
+	padding-right: 5px;
+	padding-bottom: 5px;
+}
+.entry-meta4{
+	font-size: 8px;
+	letter-spacing: .0625em;
+	margin-bottom: 10px;
+	color: #262626;
+	margin-top: 10px;
+}
+.entry-content5 p{
+	margin-top: 10px;
+	margin-bottom: 2px;
+	padding-right: 20px;
+	font-size: 12px;
+
+}
+/*------Who's who-------------------------------------------------*/
+#main3{
+	margin-left: 175px;
+}
+.whosWhoP{
+	width: 555px;
+	height: 500px;
+	margin-left: 650px;
+	position: relative;
+	margin-top: 0px;
+	overflow: hidden;
+}
+.whosWhoH{
+	margin-bottom: 50px;
+	margin-top: -200px;
+}
+.whosWho{
+	width: 300px;
+	height: 400px;
+	background-color: #EBEBEB;
+	border-radius: 10px;
+	margin-top: 10px;
+	margin-left: 10px;
+	padding: 15px;
+	box-shadow: 0 3px 3px -1px #C2C2C2;
+	float: left;
+	overflow: hidden;
+}
+.entry-title5 {
+	font-size: 12px;
+	text-decoration: none;
+	color: black;
+	margin-bottom: -5px;
+	line-height: 22px;
+	}
+.entry-title5 a{
+	font-size: 20px;
+	color: #000;
+}
+h1.entry-title5 a:hover{
+	color: #00AEEF;
+}
+.entry-title5 a:visited{
+	font-size: 30px;
+	color: #000;
+}
+.entry-content6{
+	font-size: 10px;
+	letter-spacing: .08em;
+	line-height: 1.50em;
+	color: #262626;
+}
+.entry-content6 img{
+	max-height: 200px;
+	display: block;
+	margin-bottom: 5px;
+	float: left;
+	margin-right: 10px;
+}
+.entry-meta5{
+	font-size: 10px;
+	letter-spacing: .0625em;
+	margin-bottom: 10px;
+	color: #262626;
+	margin-top: 10px;
+}
+.entry-content6 p{
+	float: left;
+	margin-bottom: 2px;
+	font-size: 10px;
+
+}
+/*------Who's who-------------------------------------------------------*/
+/*------Green Room-------------------------------------------------------*/
+.greenRoomPage{
+	margin-left: 100px;
+	margin-bottom: 20px;
+}
+.postcontainerGR{
+	width: 800px;
+	border-radius: 10px;
+	margin-top: 10px;
+	/*background-color: #F7F7F7;*/
+}
+.entry-meta8{
+	font-size: 10px;
+	letter-spacing: .0625em;
+	margin-bottom: 10px;
+	color: #262626;
+}
+.entry-content8{
+	font-size: 12px;
+	letter-spacing: .0625em;
+	line-height: 1.125em;
+	color: #262626;
+}
+.entry-title8 {
+	font-size: 20px;
+	text-decoration: none;
+	color: black;
+	margin-bottom: -5px;
+	margin-right: 50px;
+	
+}
+.entry-title8 a{
+	font-size: 20px;
+	color: #000;
+}
+h1.entry-title8 a:hover{
+	color: #00AEEF;
+}
+.entry-title8 a:visited{
+	font-size: 20px;
+	color: #000;
+}
+.h3styles{
+	margin-top: -10px;
+}
+/*--------------------Gallery-----------------------------------*/
+.entry-content9{
+	font-size: 20px;
+	text-decoration: none;
+	color: black;
+	margin-bottom: -5px;
+	margin-right: 50px;
+
+}
+.entry-content9 img{
+	min-height: 50px;
+	max-height:300px;
+	min-width: 50px;
+	max-width: 300px;
+	display: block;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	float: left;
+}
+
+.gallery{
+	width: 700px;
+	background-color: #EBEBEB;
+	border-radius: 10px;
+	margin-top: 10px;
+	margin-left: 10px;
+	padding: 15px;
+	box-shadow: 0 3px 3px -1px #C2C2C2;
+	display: -webkit-flex;
+
+}
+/*--------------------------------------------------------------
+11.0 Infinite scroll
+--------------------------------------------------------------*/
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .paging-navigation, /* Older / Newer Posts Navigation (always hidden) */
+.infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */
+	display: none;
+}
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before */
+.infinity-end.neverending .site-footer {
+	display: block;
+}
+
+/*--------------------------------------------------------------
+12.0 Media
+--------------------------------------------------------------*/
+.page-content img.wp-smiley,
+.entry-content img.wp-smiley,
+.comment-content img.wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+	border-radius: 10px;
+}
+
+/* Make sure embeds and iframes fit their containers */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+.entry-content img, .page-content img{
+	border-radius: 10px;
+}
+.entry-content2 img{
+	border-radius: 10px;
+}
+.entry-content2 ul li{
+	text-decoration: none;
+}
+.entry-content ul li{
+	text-decoration: none;
+}
+/*--------------------------------------------------------------
+12.1 Captions
+--------------------------------------------------------------*/
+.wp-caption {
+	margin-bottom: 1.5em;
+	max-width: 100%;}
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin: 0 auto;
+	border-radius: 10px;}
+.wp-caption-text {
+	text-align: center;}
+.wp-caption .wp-caption-text {
+	margin: 0.8075em 0;}
+/*--------------------------------------------------------------
+12.2 Galleries
+--------------------------------------------------------------*/
+.gallery {
+	margin-bottom: 1.5em;}
+.gallery-item {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 100%;}
+.gallery-columns-2 .gallery-item {
+	max-width: 50%;}
+.gallery-columns-3 .gallery-item {
+	max-width: 33.33%;}
+.gallery-columns-4 .gallery-item {
+	max-width: 25%;}
+.gallery-columns-5 .gallery-item {
+	max-width: 20%;}
+.gallery-columns-6 .gallery-item {
+	max-width: 16.66%;}
+.gallery-columns-7 .gallery-item {
+	max-width: 14.28%;}
+.gallery-columns-8 .gallery-item {
+	max-width: 12.5%;}
+.gallery-columns-9 .gallery-item {
+	max-width: 11.11%;}
+.gallery-caption {
+	display: block;}
+/*--------------------------------------------------------------
+12.5 Extra fixes
+--------------------------------------------------------------*/
+#howToBuy{
+	height: 1500px;
+}
+#howToBuy p{
+	font-size: 12px;
+	letter-spacing: .0625em;
+}
+.postBox2{
+	margin-left: 100px;
+}
+
+#PolicesFix, #pressRoomFix, #legalFix, #currentVolunteer, #greenRoomFix{
+	margin-top: 200px;
+}
+
+.fixEverything{
+	margin-top: 200px
+}
+.secondFix{
+	margin-top: -550px;
+}
+/*--------------------------------------------------------------
+13.0 Media Queries
+--------------------------------------------------------------*/
+@media screen and (min-width: 1300px){
+.site-branding{
+	position: absolute;
+	top: 60px;
+	left: 200px;
+	z-index: 1500;
+}
+}
+
+@media screen and (max-width: 640px){
+
+.site-branding{
+	margin-top: 50px;
+}
+#page{
+	width: 640px;
+}
+#primary2{
+	height: 1750px;
+}
+.postBox{
+	margin-top: 50px;
+}
+.headerT{
+	left: 25px;
+}
+.buyBTN2{
+	margin-top: -35px;
+}
+.nav-next{
+	margin-left: 145px;
+	margin-top: -43px;
+}
+.nav-previous{
+	margin-left: 20px;
+}
+/*------ saveTheMusic----------*/
+.mainCopy{
+  margin-top: 20px;
+  margin-left: 30px;
+  width: 550px;
+}
+.saveTheMusicP{
+	margin-left: 25px;
+	margin-top: 200px;
+	margin-bottom: -150px;
+}
+/*---navigation------------------------------------------------*/
+.site-branding{
+	top: 20px;
+	left: 20px;
+}
+.headerSS{
+	height:200px;
+	overflow: hidden;
+	width: 640px;
+}
+.site-header{
+	width: 640px;
+}
+
+.main-navigation ul {
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+	margin-left: 30px;
+}
+.main-navigation li {
+	float: left;
+	position: relative;
+	padding-left: 20px;
+	padding-top: 15px;
+}
+.main-navigation a {
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	font-size: 20px;
+	letter-spacing: .125em;
+}
+.main-navigation ul ul {
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+	float: left;
+	position: absolute;
+	top: 1.5em;
+	left: -999em;
+	z-index: 99999;
+}
+.main-navigation ul ul ul {
+	left: -999em;
+	top: 0;
+}
+.main-navigation {
+	clear: both;
+	display: block;
+	float: left;
+	width: 100%;
+	height: 30px;
+	background-color: #464646;
+}
+#site-navigation{
+	height: 150px;
+	background-color: #464646;
+	width: 640px;
+}
+.site-footer{
+	height: 100px;
+	background-color: #464646;
+	color: #fff;
+	width: 640px;
+}
+
+.menu-item{
+	padding-bottom: 5px;
+	display: block;
+	padding-right: 30px;
+}
+
+ul.sub-menu{
+	width: 350px;
+	margin-top: 20px;
+	border-radius: 10px;
+	margin-left: -20px;
+}
+.sub-menu{
+	margin-top: 15px;
+	background-color: #464646;
+	margin-left: -20px;
+}
+a.sub-menu{
+	margin-right: 20px;
+}
+.meta-nav{
+	display: block;
+}
+#content.site-content{
+	width: 640px;
+}
+/*---navigation---------------------------------------------------*/
+/*---Index.php--------------------------*/
+
+.headerP{
+	margin-top: 200px;
+	margin-left: 20px;
+}
+.buyBTN{
+	margin-top: 20px;
+	margin-right: 180px;
+}
+.postBox{
+	margin-left: 5px;
+}
+#main{
+	margin-left: 0px;
+}
+.postsTittle{
+	margin-left: 30px;
+}
+/*---Index.php--------------------------*/
+/*---ticketPrices-----------------------*/
+.ticketPrices{
+	margin-left: 75px;
+	margin-top: 100px;
+}
+.image{
+	margin-top: 200px;
+}
+.benifitsOfSub{
+	width: 500px;
+}
+/*---end ticketPrices-----------------------*/
+/*--- boxOffice ----------------------------*/
+.leftBox{
+	margin-top: 0px;
+}
+.rightBox{
+	margin-top: 275px;
+	margin-left: 130px;
+	width: 500px;
+}
+/*--- end boxOffice ------------------------*/
+/*--- howToBuy ----------------------------*/
+#how2{
+	margin-top: 200px;
+	width: 450px;
+}
+#howToBuy{
+	height: 2050px;
+}
+
+/*--- end howToBuy -------------------------*/
+/*--- venueSeatingAndMap ----------------------------*/
+#how4{
+	margin-top: 250px;
+}
+#pageVenue{
+	height: 3000px;
+}
+.rightBox2{
+	margin-left: 50px;
+}
+.leftBox2{
+	top: 2350px;
+	margin-left: 50px;
+  	width: 500px;
+  	position: absolute;
+}
+/*--- end venueSeatingAndMap ----------------------------*/
+/*--- aboutUs ----------------------------*/
+.rightBox3 {
+  margin-top: 800px;
+  width: 500px;
+  margin-left: 75px;
+  position: relative;
+  margin-bottom: 100px;
+}
+/*--- end aboutUs ----------------------------*/
+/*--- saveTheMusic ----------------------------*/
+.saveTheMusic{
+	width: 550px;
+	margin-left: 30px;	
+}
+
+/*--- end saveTheMusic ----------------------------*/
+/*--- ravesAndReviews --------------------------------------*/
+.ravesP{
+	margin-left: 75px;
+	margin-top: 150px;	
+}
+.postBox2{
+	margin-top: 100px;
+	margin-left: 30px;
+}
+.raves{
+	width: 550px;
+}
+/*--- end ravesAndReviews ----------------------------------*/
+/*--- whosWho --------------------------------------*/
+#main3{
+	margin-left: 5px;
+	margin-top: 100px;
+}
+.moreinfo{
+	margin-left: 20px;
+	width: 500px;
+}
+.postcontainer2{
+	width: 550px;
+}
+/*--- endwhosWho --------------------------------------*/
+/*--- currentVolunteerOpennings ----------------------*/
+.moreInfo{
+	margin-left: 50px;
+}
+.saveTheMusicH{
+	margin-top: 200px;
+}
+/*--- directionsOthervistorInfo ----------------------*/
+#seatingM{
+	margin-top: 50px;
+	margin-left: 125px;
+}
+#how3 {
+  margin-top: 225px;
+  margin-left: 10px;
+}
+.DVcopy{
+	width: 500px;
+}
+#parking{
+	margin-left: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#pageDirections{
+	height: 2750px;
+}
+
+/*---- policy&leagalInfo------------------------------------*/
+.legalInfo{
+	width: 550px;
+	margin-left: 25px;
+}
+/*---- gallery ------------------------------------*/
+.gallery{
+	width: 600px;
+}
+/*---- greenRoom ------------------------------------*/
+.greenRoomPage{
+	margin-left: 50px;
+	margin-top: 100px;
+	width: 550px;
+}
+.postcontainerGR{
+	width: 550px;
+}
+/*-----------------------------------------------------*/
+}
