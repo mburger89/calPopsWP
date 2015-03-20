@@ -102,7 +102,7 @@ get_header(); ?>
 				</div><!-- .whosWho -->
 				
 		<?php endwhile; wp_reset_query(); ?>
-		<h2 class="SFP">Supporting Freinds of the Pops</h2>
+		<h2 class="SFP">Supporting Friends of the Pops</h2>
 		<?php
 			query_posts('category_name=SFP&posts_per_page=50');
 				
