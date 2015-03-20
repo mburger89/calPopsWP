@@ -25,7 +25,7 @@
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="headerSS">
-		<?php if ( function_exists( 'meteor_slideshow' ) ) { meteor_slideshow(); } ?>
+			<?php if ( function_exists( 'meteor_slideshow' ) ) { meteor_slideshow(); } ?>
 		</div>
 		<div class="site-branding">
 		<!--<h6>California POPS Orchestra</h6> replaced by image-->

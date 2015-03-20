@@ -54,7 +54,7 @@ get_header(); ?>
 		<?php endwhile; wp_reset_query(); ?>
 		<h2 class="SFP">Management Team</h2>
 			<?php
-			query_posts('category_name=management-team&posts_per_page=50');
+			query_posts('category_name=management&posts_per_page=50');
 				
 				while(have_posts()) : the_post(); ?>
 				
