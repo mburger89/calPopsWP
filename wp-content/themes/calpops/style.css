@@ -245,7 +245,7 @@ small {
 	font-size: 75%;
 }
 
-big {
+big {	
 	font-size: 125%;
 }
 h2{
@@ -1062,6 +1062,7 @@ div.ticketPrices a.buyBTN2{
 	letter-spacing: 0.0625em;
 	font-size: 14px;
 	margin-bottom: 20px;
+	
 }
 a.donate:visited{
 	color: #fff;
@@ -1250,7 +1251,7 @@ a.donate:hover{
 /*------------------Support Cal Pops-----------------------------------*/
 #SupportDonate{
 	margin-left: 20px;
-	margin-top: -50px;
+	margin-top: -35px;
 }
 #how4{
 	margin-top: -250px;
@@ -2104,6 +2105,18 @@ a.sub-menu{
 }
 .postcontainerGR{
 	width: 550px;
+}
+/*-----------------------------------------------------*/
+/*---- Support the pops ------------------------------------*/
+#how4{
+	margin-top: 200px;
+	margin-left: 80px;
+}
+#supportCalPops {
+  height: 3000px;
+}
+.saveTheMusicP{
+	  height: 225px;
 }
 /*-----------------------------------------------------*/
 }

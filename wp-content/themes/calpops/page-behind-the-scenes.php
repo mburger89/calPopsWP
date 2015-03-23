@@ -16,11 +16,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 			<div>
 		<h1 class="headerT">Who's<br>Who</h1>
-			<div class="whosWhoP">
-				<p>
-				
-				</p>
-			</div>
+			
 			<div class="whosWhoH">
 			<h2 class="postsTittle">Behind The Scenes</h2> 
 				<a href="http://californiapopsorchestra.tix.com" class="buyBTN">Buy Tickets</a>
