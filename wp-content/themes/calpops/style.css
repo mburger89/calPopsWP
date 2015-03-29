@@ -1801,12 +1801,10 @@ object {
 .widget-area{
 	display: none;
 }
-/*.entry-content3 ul{
-	padding-top: 800px;
+#btnFix{
+	margin-top: -50px;
 }
-.entry-content3 p{
-	float: none
-}*/
+
 /*--------------------------------------------------------------
 13.0 Media Queries
 --------------------------------------------------------------*/
