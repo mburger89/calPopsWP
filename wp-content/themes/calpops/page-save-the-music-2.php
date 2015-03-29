@@ -32,7 +32,7 @@ get_header(); ?>
 			</div>
 		
 		<main id="main" class="site-main" role="main">
-		<div class="postBox">
+		<div class="postBox mFix">
 		<?php
 			query_posts('category_name=save-the-music&posts_per_page=1');
 				
