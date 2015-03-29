@@ -1804,7 +1804,15 @@ object {
 #btnFix{
 	margin-top: -50px;
 }
-
+#dBtnSMFix{
+ 	margin-top: -55px;
+ 	margin-left: 600px;
+ 	height: 55px;
+ 	width: 250px;
+ 	font-size: 20px;
+  	padding-left: 22px;
+ 	padding-top: 15px;
+}
 /*--------------------------------------------------------------
 13.0 Media Queries
 --------------------------------------------------------------*/
@@ -1844,17 +1852,7 @@ object {
 .nav-previous{
 	margin-left: 20px;
 }
-/*------ saveTheMusic----------*/
-.mainCopy{
-  margin-top: 20px;
-  margin-left: 30px;
-  width: 550px;
-}
-.saveTheMusicP{
-	margin-left: 25px;
-	margin-top: 200px;
-	margin-bottom: -150px;
-}
+
 /*---navigation------------------------------------------------*/
 .site-branding{
 	top: 20px;
@@ -2018,20 +2016,13 @@ a.sub-menu{
 /*--- end venueSeatingAndMap ----------------------------*/
 /*--- aboutUs ----------------------------*/
 .rightBox3 {
-  margin-top: 800px;
-  width: 500px;
-  margin-left: 75px;
-  position: relative;
-  margin-bottom: 100px;
+	margin-top: 800px;
+	width: 500px;
+	margin-left: 75px;
+	position: relative;
+	margin-bottom: 100px;
 }
 /*--- end aboutUs ----------------------------*/
-/*--- saveTheMusic ----------------------------*/
-.saveTheMusic{
-	width: 550px;
-	margin-left: 30px;	
-}
-
-/*--- end saveTheMusic ----------------------------*/
 /*--- ravesAndReviews --------------------------------------*/
 .ravesP{
 	margin-left: 75px;
@@ -2045,6 +2036,37 @@ a.sub-menu{
 	width: 550px;
 }
 /*--- end ravesAndReviews ----------------------------------*/
+/*------ saveTheMusic----------*/
+.mainCopy{
+ 	margin-top: 20px;
+ 	margin-left: 30px;
+ 	width: 550px;
+}
+.saveTheMusicP{
+	margin-left: 25px;
+	margin-top: 200px;
+	margin-bottom: -150px;
+}
+.saveTheMusic{
+	width: 550px;
+	margin-left: 30px;	
+}
+#dBtnSMFix{
+	margin-left: 184px;
+	margin-top: 0px;
+	height: 55px;
+ 	width: 250px;
+ 	font-size: 20px;
+  	padding-left: 22px;
+ 	padding-top: 15px;
+}
+.btnFix2{
+	margin-left: 125px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	border-radius: 10px;
+}
+/*--- end saveTheMusic ----------------------------*/
 /*--- whosWho --------------------------------------*/
 #main3{
 	margin-left: 5px;
@@ -2071,8 +2093,8 @@ a.sub-menu{
 	margin-left: 125px;
 }
 #how3 {
-  margin-top: 225px;
-  margin-left: 10px;
+	margin-top: 225px;
+	margin-left: 10px;
 }
 .DVcopy{
 	width: 500px;
@@ -2111,10 +2133,10 @@ a.sub-menu{
 	margin-left: 80px;
 }
 #supportCalPops {
-  height: 3000px;
+	height: 3000px;
 }
 .saveTheMusicP{
-	  height: 225px;
+	height: 225px;
 }
 /*-----------------------------------------------------*/
 }

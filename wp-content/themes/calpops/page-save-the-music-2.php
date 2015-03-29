@@ -27,7 +27,8 @@ get_header(); ?>
 			</div>
 			<div class="saveTheMusicH">
 			<h2 class="postsTittle">Pops Save the Music</h2> 
-				<a href="http://californiapopsorchestra.tix.com" class="buyBTN">Buy Tickets</a>
+				<a href="http://californiapops.tix.com/donation.asp?OrganizationNumber=201" class="donate" id="dBtnSMFix">Donate To The Pops</a>
+				<a href="http://californiapopsorchestra.tix.com" class="buyBTN btnFix2">Buy Tickets</a>
 			</div>
 		
 		<main id="main" class="site-main" role="main">
