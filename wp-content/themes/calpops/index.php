@@ -49,15 +49,13 @@ get_header(); ?>
 				while(have_posts()) : the_post(); ?>
 				
 				<div class="upComingShow">
-					<!--<section class="HbuyBTN">
-						<a href="http://californiapopsorchestra.tix.com/Schedule.aspx?OrgNum=201" class="buyBTN2" >Buy Tickets</a>
-					</section>-->
+					
 				<h1 class="entry-title2"><a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></h1>
 						<div class="entry-meta2">
 							
 						</div><!-- .entry-meta -->
 					<div class="entry-content3">
-						<?php the_post_thumbnail(); ?>
+						
 						<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'calpops' ) ); ?>
 								<?php
 						wp_link_pages( array(
@@ -92,6 +90,7 @@ get_header(); ?>
 			<?php get_template_part( 'content', 'none' ); ?>
 
 		<?php endif; ?>
+
 		</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
