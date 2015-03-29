@@ -12,7 +12,7 @@ get_header(); ?>
 	<div id="pageVenue" class="content-area">
 		<div >
 		<h1 class="headerT">Venue<br>Seating<br>Map &<br>Views</h1>
-			<div class="rightBox2" id="how4">
+			<div class="rightBox2" id="how6">
 				<a href="http://californiapopsorchestra.tix.com/Schedule.aspx?OrgNum=201" class="buyBTN2" id="btnFix">Buy Tickets</a>
 				<section class="seatingImage"></section>
 				<section class="theaterView2"></section>
