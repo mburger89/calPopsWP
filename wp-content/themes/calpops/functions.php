@@ -132,8 +132,8 @@ require get_template_directory() . '/inc/customizer.php';
  */
 require get_template_directory() . '/inc/jetpack.php';
 
-if ( ! function_exists( 'dropdown_menu' ) )
-	include( 'dropdown-menus/dropdown-menus.php' );
+#if ( ! function_exists( 'dropdown_menu' ) )
+#	include( 'dropdown-menus/dropdown-menus.php' );
 
 
 
