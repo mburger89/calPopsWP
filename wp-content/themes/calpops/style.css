@@ -50,16 +50,6 @@ and Blueprint http://www.blueprintcss.org/
 12.5 Extra fixes
 13.0 Media Queries
 --------------------------------------------------------------*/
-@font-face {
-    font-family: 'honest_johnsregular';
-    src: url('honej___-webfont.eot');
-    src: url('honej___-webfont.eot?#iefix') format('embedded-opentype'),
-         url('honej___-webfont.woff') format('woff'),
-         url('honej___-webfont.ttf') format('truetype'),
-         url('honej___-webfont.svg#honest_johnsregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
 
 /*--------------------------------------------------------------
 1.0 - Reset
@@ -172,7 +162,6 @@ h1, h2, h3, h4, h5, h6 {
 	clear: both;
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-
 
 p {
 	font-family: 'Helvetica Neue', Helvetica, sans-serif;
@@ -313,7 +302,6 @@ div.site-info a:hover{
 	color: black;
 	margin-bottom: -5px;
 	margin-right: 50px;
-	
 }
 .entry-title a{
 	font-size: 20px;
@@ -631,7 +619,7 @@ textarea {
 .headerSS{
 	height: 395px;
 	overflow: hidden;
-	/*background-image: url(images/calPopsHeaderimage.png);*/
+	/*background-image: url(images/calPopsHeaderimage.png);*//*-----if slideShow fails use this ----------*/
 	background-color: #000;
 }
 .site-branding{
@@ -667,7 +655,6 @@ textarea {
 	min-width: 150px;
 	padding: 3px;
 	font-size: 12px;
-	/*margin-top: 60px;*/
 }
 
 div.nav-next a{
@@ -744,23 +731,14 @@ a:active {
 .main-navigation ul ul a {
 	text-decoration: none;
 }
-.main-navigation ul ul li {
-}
 .main-navigation li:hover > a {
 	color: #00AEEF;
-}
-.main-navigation ul ul :hover > a {
-}
-.main-navigation ul ul a:hover {
 }
 .main-navigation ul li:hover > ul {
 	left: auto;
 }
 .main-navigation ul ul li:hover > ul {
 	left: 100%;
-}
-.main-navigation .current_page_item a,
-.main-navigation .current-menu-item a {
 }
 .footerNav{
 	height: 30px;
@@ -1092,9 +1070,8 @@ a.donate:hover{
 10.1 Posts and pages
 --------------------------------------------------------------*/
 .sticky {
-	display: block;}
-/*.hentry {
-	margin: 0 0 1.5em;}*/
+	display: block;
+}
 .byline,
 .updated:not(.published) {
 	display: none;}
@@ -1103,7 +1080,6 @@ a.donate:hover{
 	display: inline;}
 .page-links {
 	clear: both;}
-
 
 .image{
 	display: block;
@@ -1184,7 +1160,6 @@ a.donate:hover{
 	height: 400px;
 	display: block;
 	background-repeat: no-repeat;
-	
 }
 .imagecap2{
 	font-size: 10px;
@@ -1194,13 +1169,10 @@ a.donate:hover{
 }
 /*--- Venue end------------------------------------------------------*/
 /*------------------------------- Directions and visitor info-------------------------------*/
-.calPopsF{
-	background-image: url()
-}
+
 .DVcopy{
 	margin-left: 100px;
 	width: 800px;
-
 }
 .map{
 	margin-top: 5px;
@@ -1241,7 +1213,6 @@ a.donate:hover{
 #seatingM{
 	margin-top: -450px;
 	margin-left: 80px;
-
 }
 .seatingImage2{
 	background-image: url("images/smithwick-seating-plan-6x6-web-1.jpg");
@@ -1270,7 +1241,10 @@ a.donate:hover{
 	margin-left: 110px;
 	width: 800px;
 }
-/*------------------Support Save the music-----------------------------------*/
+.CPForms{
+	text-decoration: underline;
+}
+/*------------------Support/Save the music-----------------------------------*/
 #adjustType{
 	margin-top: -15px;
 }
@@ -1823,7 +1797,7 @@ object {
 	top: 60px;
 	left: 200px;
 	z-index: 1500;
-}
+	}
 }
 
 @media screen and (max-width: 640px){
@@ -2151,5 +2125,6 @@ a.sub-menu{
 .saveTheMusicP{
 	height: 225px;
 }
+
 /*-----------------------------------------------------*/
 }

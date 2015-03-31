@@ -16,8 +16,8 @@ get_header(); ?>
 				<a href="http://californiapops.tix.com/donation.asp?OrganizationNumber=201" class="donate" id="SupportDonate">Donate To The Pops</a>
 				<a href="http://californiapopsorchestra.tix.com/Schedule.aspx?OrgNum=201" class="buyBTN2" >Buy Tickets</a>
 				<div class="supportType">
-				<h3><a href="http://www.californiapopsorchestra.com/images/20142015season/capopsadorderform2014-2015.pdf  ">CA Pops Ad Order Form click here</a></h3>
-				<h3><a href="http://www.californiapopsorchestra.com/images/20142015season/capopsadbenefits2014-2015.pdf">Advertiser Benefits(PDF) click here</a></h3>
+				<h3 class="CPForms"><a href="http://www.californiapopsorchestra.com/images/20142015season/capopsadorderform2014-2015.pdf">CA Pops Ad Order Form click here</a></h3>
+				<h3 class="CPForms"><a href="http://www.californiapopsorchestra.com/images/20142015season/capopsadbenefits2014-2015.pdf">Advertiser Benefits(PDF) click here</a></h3>
 				<h2>Donate with your Heart</h2>
 				<p>Becoming a donor is a very important step in helping the Pops continue to delight you, your friends and others in the Bay Area who share your obvious good taste in musical entertainment!</p>
 				<p>In all seriousness, we can't do this without you - either in the audience or as a financial supporter of the Pops. Every donation, large and small is critical to getting the shows on the stage, preserving this wonderful music and finding new music we know you'll enjoy.</p>
