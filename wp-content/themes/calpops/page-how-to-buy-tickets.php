@@ -24,9 +24,9 @@ get_header(); ?>
 				<br>Please do not submit credit card info using email.<br> Include your phone # so we can call you for your card information.</p>
 				<p>There is a $1 ticket exchange fee (see exchange guidelines).</p>
 				<h3>Online Purchase Tickets</h3>
-				<p>http://californiapopsorchestra.tix.com/Schedule.aspx?OrgNum=201</p>
+				<p><a href="http://californiapopsorchestra.tix.com/Schedule.aspx?OrgNum=201">http://californiapopsorchestra.tix.com/Schedule.aspx?OrgNum=201</a></p>
 				<h2>Tickets by Mail</h2>
-				<a href="http://localhost:8888/wordpress/wp-content/uploads/2014/08/cpo-20142015-tixorderform-web.pdf" alt="ticketsformpdf"><h3>Click here for TICKET ORDER FORM: (a 311kb pdf file)</h3></a>
+				<a href="http://www.californiapopsorchestra.com/images/20142015season/cpo-20142015-tixorderform-web.pdf" alt="ticketsformpdf"><h3>Click here for TICKET ORDER FORM: (a 311kb pdf file)</h3></a>
 				<p>Please complete the ticket order form. Include a check made out to the California Pops Orchestra or your complete Visa/Mastercard information with a stamped self - addressed return envelope.</p>
 				<h3>Mail to:</h3>
 				<p>
