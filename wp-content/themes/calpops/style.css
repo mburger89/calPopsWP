@@ -1802,9 +1802,6 @@ object {
 
 @media screen and (max-width: 640px){
 
-.site-branding{
-	margin-top: 50px;
-}
 #page{
 	width: 640px;
 }
@@ -1830,8 +1827,8 @@ object {
 
 /*---navigation------------------------------------------------*/
 .site-branding{
-	top: 20px;
-	left: 20px;
+	top: 60px;
+	left: 5px;
 }
 .headerSS{
 	height:200px;
@@ -1841,7 +1838,6 @@ object {
 .site-header{
 	width: 640px;
 }
-
 .main-navigation ul {
 	list-style: none;
 	margin: 0;
@@ -1860,18 +1856,6 @@ object {
 	color: #fff;
 	font-size: 20px;
 	letter-spacing: .125em;
-}
-.main-navigation ul ul {
-	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-	float: left;
-	position: absolute;
-	top: 1.5em;
-	left: -999em;
-	z-index: 99999;
-}
-.main-navigation ul ul ul {
-	left: -999em;
-	top: 0;
 }
 .main-navigation {
 	clear: both;
@@ -1919,6 +1903,336 @@ a.sub-menu{
 #content.site-content{
 	width: 640px;
 }
+/*---navigation---------------------------------------------------*/
+/*---Index.php--------------------------*/
+
+.headerP{
+	margin-top: 200px;
+	margin-left: 20px;
+}
+.buyBTN{
+	margin-top: 20px;
+	margin-right: 180px;
+}
+.postBox{
+	margin-left: 5px;
+}
+#main{
+	margin-left: 0px;
+}
+.postsTittle{
+	margin-left: 30px;
+}
+/*---Index.php--------------------------*/
+/*---ticketPrices-----------------------*/
+.ticketPrices{
+	margin-left: 75px;
+	margin-top: 100px;
+}
+.image{
+	margin-top: 200px;
+}
+.benifitsOfSub{
+	width: 500px;
+}
+/*---end ticketPrices-----------------------*/
+/*--- boxOffice ----------------------------*/
+.leftBox{
+	margin-top: 0px;
+}
+.rightBox{
+	margin-top: 275px;
+	margin-left: 130px;
+	width: 500px;
+}
+/*--- end boxOffice ------------------------*/
+/*--- howToBuy ----------------------------*/
+#how2{
+	margin-top: 200px;
+	width: 450px;
+}
+#howToBuy{
+	height: 2050px;
+}
+
+/*--- end howToBuy -------------------------*/
+/*--- venueSeatingAndMap ----------------------------*/
+#how6{
+	margin-top: 250px;
+}
+#pageVenue{
+	height: 3000px;
+}
+.rightBox2{
+	margin-left: 50px;
+}
+.leftBox2{
+	top: 2350px;
+	margin-left: 50px;
+  	width: 500px;
+  	position: absolute;
+}
+#btnFix{
+	margin-right: 200px;
+}
+#imageG{
+	margin-top: 25px;
+}
+/*--- end venueSeatingAndMap ----------------------------*/
+/*--- aboutUs ----------------------------*/
+.rightBox3 {
+	margin-top: 800px;
+	width: 500px;
+	margin-left: 75px;
+	position: relative;
+	margin-bottom: 100px;
+}
+/*--- end aboutUs ----------------------------*/
+/*--- ravesAndReviews --------------------------------------*/
+.ravesP{
+	margin-left: 75px;
+	margin-top: 150px;	
+}
+.postBox2{
+	margin-top: 100px;
+	margin-left: 30px;
+}
+.raves{
+	width: 550px;
+}
+/*--- end ravesAndReviews ----------------------------------*/
+/*------ saveTheMusic----------*/
+.mainCopy{
+ 	margin-top: 20px;
+ 	margin-left: 30px;
+ 	width: 550px;
+}
+.saveTheMusicP{
+	margin-left: 25px;
+	margin-top: 200px;
+	margin-bottom: -150px;
+}
+.saveTheMusic{
+	width: 550px;
+	margin-left: 30px;	
+}
+#dBtnSMFix{
+	margin-left: 184px;
+	margin-top: 0px;
+	height: 55px;
+ 	width: 250px;
+ 	font-size: 20px;
+  	padding-left: 22px;
+ 	padding-top: 15px;
+}
+.btnFix2{
+	margin-left: 125px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	border-radius: 10px;
+}
+.mFix{
+	margin-top: 115px;
+}
+/*--- end saveTheMusic ----------------------------*/
+/*--- whosWho --------------------------------------*/
+#main3{
+	margin-left: 5px;
+	margin-top: 100px;
+}
+.moreinfo{
+	margin-left: 20px;
+	width: 500px;
+}
+.postcontainer2{
+	width: 550px;
+}
+.entry-title0{
+	width: 400px;
+}
+/*--- endwhosWho --------------------------------------*/
+/*--- currentVolunteerOpennings ----------------------*/
+.moreInfo{
+	margin-left: 50px;
+}
+.saveTheMusicH{
+	margin-top: 200px;
+}
+/*--- directionsOthervistorInfo ----------------------*/
+#seatingM{
+	margin-top: 50px;
+	margin-left: 125px;
+}
+#how3 {
+	margin-top: 225px;
+	margin-left: 10px;
+}
+.DVcopy{
+	width: 500px;
+}
+#parking{
+	margin-left: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#pageDirections{
+	height: 2750px;
+}
+
+/*---- policy&leagalInfo------------------------------------*/
+.legalInfo{
+	width: 550px;
+	margin-left: 25px;
+}
+/*---- gallery ------------------------------------*/
+.gallery{
+	width: 600px;
+}
+/*---- greenRoom ------------------------------------*/
+.greenRoomPage{
+	margin-left: 50px;
+	margin-top: 100px;
+	width: 550px;
+}
+.postcontainerGR{
+	width: 550px;
+}
+/*-----------------------------------------------------*/
+/*---- Support the pops ------------------------------------*/
+#how4{
+	margin-top: 200px;
+	margin-left: 80px;
+}
+#supportCalPops {
+	height: 3000px;
+}
+.saveTheMusicP{
+	height: 225px;
+}
+
+/*-----------------------------------------------------*/
+}
+
+/* ============================================================
+iPhone 
+============================================================ */
+@media screen and (max-width: 400px){
+
+#page{
+	width: 400px;
+}d
+#primary2{
+	height: 1750px;
+}
+.postBox{
+	margin-top: 50px;
+}
+.headerT{
+	left: 25px;
+}
+.buyBTN2{
+	margin-top: -35px;
+}
+.nav-next{
+	margin-left: 210px;
+	margin-top: -40px;
+}
+.nav-previous{
+	margin-left: 20px;
+}
+
+/*---navigation------------------------------------------------*/
+.site-branding{
+	top: 60px;
+	left: 5px;
+}
+.headerSS{
+	height:125px;
+	overflow: hidden;
+	width: 400px;
+}
+.site-header{
+	width: 400px;
+}
+
+.main-navigation ul {
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+	margin-left: 20px;
+}
+.main-navigation li {
+	float: left;
+	position: relative;
+	padding-left: 5px;
+	padding-top: 10px;
+}
+.main-navigation a {
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	font-size: 15px;
+	letter-spacing: .125em;
+}
+.main-navigation {
+	clear: both;
+	display: block;
+	float: left;
+	width: 100%;
+	height: 30px;
+	background-color: #464646;
+}
+#site-navigation{
+	height: 200px;
+	background-color: #464646;
+	width: 400px;
+}
+.site-footer{
+	background-color: #464646;
+	color: #fff;
+	padding-left: -450px;
+}
+.site-info{
+	margin-left: -100px;
+	font-size: .5em;
+	background-color: #464646;
+}
+}
+#colophon{
+	width: 400px;
+	display: block;
+}
+.footerNav{
+
+	width: 400px;
+}
+.menu-item{
+	padding-bottom: 5px;
+	display: block;
+	padding-right: 30px;
+}
+
+ul.sub-menu{
+	width: 350px;
+	margin-top: 20px;
+	border-radius: 10px;
+	margin-left: -20px;
+}
+.sub-menu{
+	margin-top: 15px;
+	background-color: #464646;
+	margin-left: -20px;
+}
+a.sub-menu{
+	margin-right: 20px;
+}
+.meta-nav{
+	display: block;
+}
+#content.site-content{
+	width: 640px;
+}
+
 /*---navigation---------------------------------------------------*/
 /*---Index.php--------------------------*/
 

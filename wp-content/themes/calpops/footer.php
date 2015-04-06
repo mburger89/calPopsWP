@@ -12,7 +12,6 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			
 			<nav id="site-navigation" class="main-navigation " role="navigation">
 			<div class="footerNav">
 			<?php wp_nav_menu( array( 'theme_location' => 'footer-menu', 'container_class' => 'my_extra_menu_class' ) );?></div>
