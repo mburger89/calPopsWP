@@ -36,7 +36,7 @@ get_header(); ?>
 					your Maestro, Kim Venaas
 				</p>
 			</div>
-			<div>
+			<div class="FPosttittle">
 			<h2 class="postsTittle">Whats Happening at CalPops?</h2> 
 				<a href="http://californiapopsorchestra.tix.com" class="buyBTN">Buy Tickets</a>
 			</div>

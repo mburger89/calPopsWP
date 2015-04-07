@@ -1906,10 +1906,10 @@ a.sub-menu{
 /*---navigation---------------------------------------------------*/
 /*---Index.php--------------------------*/
 
-.headerP{
+/*.headerP{
 	margin-top: 200px;
 	margin-left: 20px;
-}
+}*/
 .buyBTN{
 	margin-top: 20px;
 	margin-right: 180px;
@@ -2127,18 +2127,8 @@ iPhone
 .postBox{
 	margin-top: 50px;
 }
-.headerT{
-	left: 25px;
-}
 .buyBTN2{
 	margin-top: -35px;
-}
-.nav-next{
-	margin-left: 210px;
-	margin-top: -40px;
-}
-.nav-previous{
-	margin-left: 20px;
 }
 
 /*---navigation------------------------------------------------*/
@@ -2203,7 +2193,6 @@ iPhone
 	display: block;
 }
 .footerNav{
-
 	width: 400px;
 }
 .menu-item{
@@ -2232,28 +2221,67 @@ a.sub-menu{
 #content.site-content{
 	width: 640px;
 }
-
 /*---navigation---------------------------------------------------*/
 /*---Index.php--------------------------*/
-
+.headerT{
+	top: 25px;
+	left: 25px;
+}
 .headerP{
-	margin-top: 200px;
+	margin-top:50px;
+	width: 350px;
 	margin-left: 20px;
 }
 .buyBTN{
 	margin-top: 20px;
-	margin-right: 180px;
+	margin-right: 300px;
 }
 .postBox{
 	margin-left: 5px;
+	width: 450px;
 }
 #main{
 	margin-left: 0px;
 }
 .postsTittle{
 	margin-left: 30px;
+	margin-top: 150px;
+	width: 300px;
 }
+/*----- big post classes -------*/
+
+.upComingShow{
+	width: 300px;
+	height: 300px;
+	margin-left: 10px;
+}
+.entry-content3{
+	width: 300px;
+}
+/*------------------------------*/
+/*--- big post link page -------*/
+.single-post{
+	width: 350px;
+}
+.postcontainer2{
+	width: 390px;
+	margin-left: 5px;
+}
+.nav-next{
+	margin-left: 60px;
+	margin-top: -40px;
+	width: 25%;
+}
+.nav-previous{
+	margin-left: 5px;
+	width: 25%;
+}
+.post-navigation{
+	width: 400px;
+}
+/*------------------------------*/
 /*---Index.php--------------------------*/
+
 /*---ticketPrices-----------------------*/
 .ticketPrices{
 	margin-left: 75px;
@@ -2374,9 +2402,7 @@ a.sub-menu{
 	margin-left: 20px;
 	width: 500px;
 }
-.postcontainer2{
-	width: 550px;
-}
+
 .entry-title0{
 	width: 400px;
 }
