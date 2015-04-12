@@ -31,7 +31,7 @@
 		<!--<h6>California POPS Orchestra</h6> replaced by image-->
 		</div>
 		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle"><?php _e( 'Primary Menu', 'calpops' ); ?></button>
+			<!--<button class="menu-toggle"><?php _e( 'Primary Menu', 'calpops' ); ?></button>-->
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?><!-- site nav -->
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->

@@ -776,9 +776,9 @@ a.sub-menu{
 		display: block;
 	}
 
-	.main-navigation ul {
+	/*.main-navigation ul {
 		display: none;
-	}
+	}*/
 }
 
 .site-main .comment-navigation,
@@ -1906,10 +1906,7 @@ a.sub-menu{
 /*---navigation---------------------------------------------------*/
 /*---Index.php--------------------------*/
 
-/*.headerP{
-	margin-top: 200px;
-	margin-left: 20px;
-}*/
+
 .buyBTN{
 	margin-top: 20px;
 	margin-right: 180px;
@@ -2120,7 +2117,7 @@ iPhone
 
 #page{
 	width: 400px;
-}d
+}
 #primary2{
 	height: 1750px;
 }
@@ -2133,7 +2130,7 @@ iPhone
 
 /*---navigation------------------------------------------------*/
 .site-branding{
-	top: 60px;
+	top: 10px;
 	left: 5px;
 }
 .headerSS{
@@ -2149,10 +2146,11 @@ iPhone
 	list-style: none;
 	margin: 0;
 	padding-left: 0;
-	margin-left: 20px;
+	margin-left: 10px;
+	float: none;
 }
 .main-navigation li {
-	float: left;
+	float: none;
 	position: relative;
 	padding-left: 5px;
 	padding-top: 10px;
@@ -2187,13 +2185,20 @@ iPhone
 	font-size: .5em;
 	background-color: #464646;
 }
-}
+
 #colophon{
 	width: 400px;
 	display: block;
 }
 .footerNav{
 	width: 400px;
+}
+.my_extra_menu_class{
+	margin-left: 100px;	
+	height: 225px;
+}
+.madewith{
+	
 }
 .menu-item{
 	padding-bottom: 5px;
@@ -2225,7 +2230,7 @@ a.sub-menu{
 /*---Index.php--------------------------*/
 .headerT{
 	top: 25px;
-	left: 25px;
+	left: 10px;
 }
 .headerP{
 	margin-top:50px;
@@ -2251,8 +2256,8 @@ a.sub-menu{
 /*----- big post classes -------*/
 
 .upComingShow{
-	width: 300px;
-	height: 300px;
+	width: 350px;
+	height: 350px;
 	margin-left: 10px;
 }
 .entry-content3{
@@ -2264,7 +2269,7 @@ a.sub-menu{
 	width: 350px;
 }
 .postcontainer2{
-	width: 390px;
+	width: 365px;
 	margin-left: 5px;
 }
 .nav-next{
@@ -2280,7 +2285,7 @@ a.sub-menu{
 	width: 400px;
 }
 /*------------------------------*/
-/*---Index.php--------------------------*/
+/*--- end Index.php--------------------------*/
 
 /*---ticketPrices-----------------------*/
 .ticketPrices{
@@ -2412,7 +2417,7 @@ a.sub-menu{
 	margin-left: 50px;
 }
 .saveTheMusicH{
-	margin-top: 200px;
+	margin-top: 50px;
 }
 /*--- directionsOthervistorInfo ----------------------*/
 #seatingM{

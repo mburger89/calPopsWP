@@ -16,8 +16,10 @@
 			<div class="footerNav">
 			<?php wp_nav_menu( array( 'theme_location' => 'footer-menu', 'container_class' => 'my_extra_menu_class' ) );?></div>
 			</nav><!-- #site-navigation -->
+			<div class="madewith">
 			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'calpops' ) ); ?>" class="writenWith"><?php printf( __( 'Proudly powered by %s', 'calpops' ), 'WordPress' ); ?></a>
 			<?php printf( __( 'Theme: %1$s by %2$s.', 'calpops' ), 'calPops', '<a href="http://www.maxburgerdesign.com/" rel="designer" class="writenBy">Max Burger</a>' ); ?>
+			</div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
