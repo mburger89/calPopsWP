@@ -2543,7 +2543,11 @@ div.ticketPrices a.buyBTN2 {
 }
 /*---- gallery ------------------------------------*/
 .gallery{
-	width: 600px;
+	width: 365px;
+	float: none;
+}
+.giPhone{
+	margin-top: -100px;	
 }
 /*---- greenRoom ------------------------------------*/
 .greenRoomPage{
