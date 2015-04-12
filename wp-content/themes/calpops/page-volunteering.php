@@ -14,8 +14,8 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<h1 class="headerT">Current<br>Volunteer<br>Openings</h1>
-			<div class="saveTheMusicH">
+		<h1 class="headerT iphoneHeader2">Current<br>Volunteer<br>Openings</h1>
+			<div class="saveTheMusicH STMIphone">
 			<h2 class="postsTittle" id="currentVolunteer">Volunteer for the Pops</h2> 
 				<a href="http://californiapopsorchestra.tix.com" class="buyBTN">Buy Tickets</a>
 			</div>

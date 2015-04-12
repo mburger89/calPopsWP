@@ -1299,7 +1299,6 @@ h1.entry-title2 a:hover{
 	margin-top: 10px;
 }
 .entry-content3 p{
-	
 	margin-bottom: 3px;
 }
 
@@ -2490,6 +2489,7 @@ div.ticketPrices a.buyBTN2 {
 }
 .iphoneHeader2{
 	font-size: 73px;
+	line-height: 65px;
 }
 /*--- endwhosWho --------------------------------------*/
 /*--- currentVolunteerOpennings ----------------------*/
@@ -2497,7 +2497,12 @@ div.ticketPrices a.buyBTN2 {
 	margin-left: 20px;
 	width: 360px;
 }
-
+#currnetVolunteer{
+	margin-top: -150px;
+}
+.STMIphone{
+	margin-top: -150px;	
+}
 /*--- directionsOthervistorInfo ----------------------*/
 #seatingM{
 	margin-top: 50px;
