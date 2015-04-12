@@ -397,6 +397,16 @@ a:hover.buyBTN2{
 	top: 125px;
 	line-height: 120px;
 }
+.headerW{
+	position: relative;
+	left: 125px;
+	font-size: 125px;
+	color: #00AEEF;
+	font-weight: bold;
+	top: 100px;
+	margin-bottom: 325px;
+	line-height: 120px;
+}
 .headerS{
 	position: relative;
 	left: 125px;
@@ -2481,6 +2491,16 @@ div.ticketPrices a.buyBTN2 {
 .entry-title0{
 	width: 360px;
 }
+.headerW{
+	position: relative;
+	left: 5px;
+	font-size: 125px;
+	color: #00AEEF;
+	font-weight: bold;
+	top: 20px;
+	margin-bottom: 225px;
+	line-height: 120px;
+}
 .whoswhoM{
 	margin-top: 250px;
 }
@@ -2551,12 +2571,12 @@ div.ticketPrices a.buyBTN2 {
 }
 /*---- greenRoom ------------------------------------*/
 .greenRoomPage{
-	margin-left: 50px;
-	margin-top: 100px;
-	width: 550px;
+	margin-left: 5px;
+	margin-top: 30px;
+	width: 360px;
 }
 .postcontainerGR{
-	width: 550px;
+	width: 350px;
 }
 /*-----------------------------------------------------*/
 /*---- Support the pops ------------------------------------*/
@@ -2574,5 +2594,13 @@ div.ticketPrices a.buyBTN2 {
 	margin-left: 2px;
 }
 
+/*-----------------------------------------------------*/
+/*---- Contact Us ------------------------------------*/
+.iphoneHeader4{
+	font-size: 85px;
+	line-height: 85px;
+	width: 300px;
+	
+}
 /*-----------------------------------------------------*/
 }

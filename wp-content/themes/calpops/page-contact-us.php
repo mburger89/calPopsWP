@@ -14,9 +14,9 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<h1 class="headerT">Contact Us</h1>
+		<h1 class="headerT iphoneHeader4">Contact Us</h1>
 			
-			<div class="saveTheMusicH">
+			<div class="saveTheMusicH giPhone">
 
 			<h2 class="postsTittle fixEverything">We would like to hear form you!</h2> 
 				<a href="http://californiapopsorchestra.tix.com" class="buyBTN">Buy Tickets</a>

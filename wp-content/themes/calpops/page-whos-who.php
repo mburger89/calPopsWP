@@ -15,7 +15,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 			<div>
-		<h1 class="headerT iphoneHeader">Who's<br>Who</h1>
+		<h1 class="headerW iphoneHeader" id="whoFix">Who's<br>Who</h1>
 			
 			<div class="whosWhoH" >
 			<h2 class="postsTittle whoswhoM" >Board of Directors</h2> 
