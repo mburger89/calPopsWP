@@ -16,10 +16,12 @@ get_header(); ?>
 			<i class="imagecap">Smithwick Theatre</i>
 			<!---Image of front end -->
 			<div class="ticketPrices secondFix">
+			<div class="iPhoneFix">
 			<a href="http://californiapops.tix.com/donation.asp?OrganizationNumber=201" class="donate">Donate To The Pops</a>
 			<a href="http://californiapopsorchestra.tix.com/Schedule.aspx?OrgNum=201" class="buyBTN2">Buy Tickets</a>
+			</div><!---end IphoneFix-->
 				<h2> Ticket Prices</h2>
-				<table>
+				<table class="ticketTable">
 					<tr>
 						<th>All Reserved Seats</th>
 						<th>Season Tickets <br>6 Shows</th>

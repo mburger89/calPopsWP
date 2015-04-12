@@ -2296,14 +2296,35 @@ a.sub-menu{
 
 /*---ticketPrices-----------------------*/
 .ticketPrices{
-	margin-left: 75px;
+	margin-left: 10px;
 	margin-top: 100px;
 }
+.secondFix{
+	margin-top: 10px;
+}
+div.ticketPrices a.buyBTN2 {
+  margin-top: 0px;
+  margin-right: 305px;
+  margin-bottom: 20px;
+}
 .image{
-	margin-top: 200px;
+	margin-top: 100px;
+	margin-left: 10px;
+	width: 355px;
 }
 .benifitsOfSub{
-	width: 500px;
+	width: 355px;
+}
+.tickets{
+	font-size: 100px;
+	margin-left: 0px;
+	margin-top: 25px;
+}
+.iPhoneFix{
+	margin-left: 75px
+}
+.ticketTable{
+	width: 360px;
 }
 /*---end ticketPrices-----------------------*/
 /*--- boxOffice ----------------------------*/
