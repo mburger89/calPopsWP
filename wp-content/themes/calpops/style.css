@@ -2362,25 +2362,29 @@ div.ticketPrices a.buyBTN2 {
 /*--- end howToBuy -------------------------*/
 /*--- venueSeatingAndMap ----------------------------*/
 #how6{
-	margin-top: 250px;
+	margin-top: 100px;
 }
 #pageVenue{
-	height: 3000px;
+	height: 2750px;
+}
+.seatingImage{
+	margin-left: 0px;
+	width: 450px;
 }
 .rightBox2{
-	margin-left: 50px;
+	margin-left: 0px;
 }
 .leftBox2{
 	top: 2350px;
-	margin-left: 50px;
-  	width: 500px;
+	margin-left: 0px;
+  	width: 360px;
   	position: absolute;
 }
 #btnFix{
 	margin-right: 200px;
 }
 #imageG{
-	margin-top: 25px;
+	margin-top: -275px;
 }
 /*--- end venueSeatingAndMap ----------------------------*/
 /*--- aboutUs ----------------------------*/
