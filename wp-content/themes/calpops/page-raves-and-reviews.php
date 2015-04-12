@@ -15,7 +15,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 			<div>
-		<h1 class="headerT">Raves &<br>Reviews</h1>
+		<h1 class="headerT iphoneHeader3">Raves &<br>Reviews</h1>
 			<div class="ravesP">
 			<h2>Top 10 Reasons Why I Love the California Pops</h2>
 			<h3>by Chin Beckmann</h3>
@@ -31,7 +31,6 @@ get_header(); ?>
 					<li>We get to see unusual instruments featured such as vacuums and garden hose.</li>
 					<li>No two shows are the same.</li>
 				</ol>
-				
 			</div>
 			<div>
 			<h2 class="postsTittle">Pops Raves & Reviews</h2> 

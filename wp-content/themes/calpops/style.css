@@ -2411,15 +2411,19 @@ div.ticketPrices a.buyBTN2 {
 /*--- end aboutUs ----------------------------*/
 /*--- ravesAndReviews --------------------------------------*/
 .ravesP{
-	margin-left: 75px;
-	margin-top: 150px;	
+	margin-left: 10px;
+	margin-top: 50px;
+	width: 355px;	
 }
 .postBox2{
-	margin-top: 100px;
-	margin-left: 30px;
+	margin-left: -2.8px;
 }
 .raves{
-	width: 550px;
+	width: 360px;
+}
+.iphoneHeader3{
+	font-size: 85px;
+	line-height: 85px;
 }
 /*--- end ravesAndReviews ----------------------------------*/
 /*------ saveTheMusic----------*/
@@ -2501,7 +2505,7 @@ div.ticketPrices a.buyBTN2 {
 	margin-left: 10px;
 }
 .DVcopy{
-	width: 500px;
+	width: 360px;
 }
 #parking{
 	margin-left: 5px;
