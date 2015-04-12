@@ -11,9 +11,9 @@ get_header(); ?>
 
 	<div id="howToBuy" class="content-area">
 		<div >
-		<h1 class="headerT">How <br>to buy<br>Tickets</h1>
+		<h1 class="headerT iphoneHeader">How <br>to buy<br>Tickets</h1>
 			<div class="rightBox" id="how2">
-				<a href="http://californiapopsorchestra.tix.com/Schedule.aspx?OrgNum=201" class="buyBTN2" >Buy Tickets</a>
+				<a href="http://californiapopsorchestra.tix.com/Schedule.aspx?OrgNum=201" class="buyBTN2 HTBB" >Buy Tickets</a>
 				<h2>By Phone</h2>
 				<p><strong>(650) 856-8432</strong> between 9:00am and 5:00pm Monday - Friday
 				<br>(Just a $3 Service Charge)Payment by Visa or Master card only.)</p>
@@ -73,13 +73,7 @@ get_header(); ?>
 				printed on the ticket. By accepting a ticket, you are agreeing to the terms of this license. If these terms are not acceptable, please promptly 
 				contact the CPO box office at (650) 856-8432 or email manager@calpops.org.</p>
 			</div>
-			<div class="leftBox">
 			
-		</div>
-
-		<main id="main" class="site-main" role="main">
-
-		</main><!-- #main -->
 	</div><!-- #primary -->
 
 <?php get_sidebar(); ?>
