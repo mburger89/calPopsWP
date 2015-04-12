@@ -2135,6 +2135,7 @@ iPhone
 }
 .buyBTN2{
 	margin-top: -35px;
+	margin-bottom: 20px;
 }
 
 /*---navigation------------------------------------------------*/
@@ -2289,16 +2290,22 @@ a.sub-menu{
 	margin-left: 5px;
 }
 .nav-next{
-	margin-left: 60px;
+	margin-left: 40px;
 	margin-top: -40px;
-	width: 25%;
+	width: 100px;
 }
 .nav-previous{
 	margin-left: 5px;
-	width: 25%;
+	width: 100px;
 }
 .post-navigation{
-	width: 400px;
+	width: 365px;
+}
+.comment-navigation .nav-previous, .paging-navigation .nav-previous, .post-navigation .nav-previous{
+	width: 0px;
+}
+.entry-title0{
+	width: 200px;
 }
 /*------------------------------*/
 /*--- end Index.php--------------------------*/
@@ -2488,9 +2495,7 @@ div.ticketPrices a.buyBTN2 {
 	margin-left: 20px;
 	width: 500px;
 }
-.entry-title0{
-	width: 360px;
-}
+
 .headerW{
 	position: relative;
 	left: 5px;
