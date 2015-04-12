@@ -18,7 +18,7 @@ get_header(); ?>
 		<h1 class="headerT iphoneHeader">Who's<br>Who</h1>
 			
 			<div class="whosWhoH" >
-			<h2 class="postsTittle" id="whoswhoM">Board of Directors</h2> 
+			<h2 class="postsTittle whoswhoM" >Board of Directors</h2> 
 				<a href="http://californiapopsorchestra.tix.com" class="buyBTN">Buy Tickets</a>
 			</div>
 		</div>

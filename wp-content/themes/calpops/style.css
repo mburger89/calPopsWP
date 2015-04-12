@@ -2473,13 +2473,20 @@ div.ticketPrices a.buyBTN2 {
 .entry-title0{
 	width: 360px;
 }
-#whoswhoM{
+.whoswhoM{
 	margin-top: 250px;
+}
+.whosWho{
+	width: 345px;
+}
+.iphoneHeader2{
+	font-size: 73px;
 }
 /*--- endwhosWho --------------------------------------*/
 /*--- currentVolunteerOpennings ----------------------*/
 .moreInfo{
-	margin-left: 50px;
+	margin-left: 20px;
+	width: 360px;
 }
 .saveTheMusicH{
 	margin-top: -125px;

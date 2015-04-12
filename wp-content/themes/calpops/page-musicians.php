@@ -15,14 +15,10 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 			<div>
-		<h1 class="headerT">Musicians</h1>
-			<div class="whosWhoP">
-				<p>
-				
-				</p>
-			</div>
+		<h1 class="headerT iphoneHeader2">Musicians</h1>
+			
 			<div class="whosWhoH">
-			<h2 class="postsTittle">The Musicians</h2> 
+			<h2 class="postsTittle whoswhoM">The Musicians</h2> 
 				<a href="http://californiapopsorchestra.tix.com" class="buyBTN">Buy Tickets</a>
 			</div>
 		</div>
