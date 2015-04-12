@@ -14,9 +14,8 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<h1 class="headerT">Legal &<br> Tax Info.</h1>
-			
-			<div class="saveTheMusicH">
+		<h1 class="headerT iphoneHeader3">Legal &<br> Tax Info.</h1>
+			<div class="saveTheMusicH STMIphone">
 			<h2 class="postsTittle" id="legalFix">Pops Legal and Tax Info.</h2> 
 				<a href="http://californiapopsorchestra.tix.com" class="buyBTN">Buy Tickets</a>
 			</div>
