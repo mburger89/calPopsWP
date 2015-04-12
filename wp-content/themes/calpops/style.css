@@ -2381,19 +2381,32 @@ div.ticketPrices a.buyBTN2 {
   	position: absolute;
 }
 #btnFix{
-	margin-right: 200px;
+	margin-right: 300px;
 }
 #imageG{
 	margin-top: -275px;
 }
+
 /*--- end venueSeatingAndMap ----------------------------*/
 /*--- aboutUs ----------------------------*/
 .rightBox3 {
-	margin-top: 800px;
-	width: 500px;
-	margin-left: 75px;
+	margin-top: 519px;
+	width: 360px;
+	margin-left: 10px;
 	position: relative;
 	margin-bottom: 100px;
+}
+.kimsImg {
+  background-image: url("images/IMG_3328kim xmas 07.jpg");
+  width: 450px;
+  height: 360px;
+  top: 800px;
+  margin-left: -50px;
+  border-radius: 0px;
+  position: absolute;
+}
+#btnFix2{
+	margin-right: 100px;
 }
 /*--- end aboutUs ----------------------------*/
 /*--- ravesAndReviews --------------------------------------*/

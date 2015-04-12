@@ -13,7 +13,7 @@ get_header(); ?>
 		<div >
 		<h1 class="headerT">About<br>the<br>Pops</h1>
 			<div class="rightBox3" >
-				<a href="http://californiapopsorchestra.tix.com/Schedule.aspx?OrgNum=201" class="buyBTN2" >Buy Tickets</a>
+				<a href="http://californiapopsorchestra.tix.com/Schedule.aspx?OrgNum=201" class="buyBTN2" id="btnFix2">Buy Tickets</a>
 				<h2>"Your kind of music! Your kind of orchestra!"</h2>
 				<p>This motto is at the heart of the California Pops Orchestra. We have only one goal and that is 
 				to bring the best, most entertaining pops shows to the Bay Area. As the nation's only all-request 
