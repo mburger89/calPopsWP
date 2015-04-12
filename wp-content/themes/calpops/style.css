@@ -2178,7 +2178,6 @@ iPhone
 .site-footer{
 	background-color: #464646;
 	color: #fff;
-	padding-left: -450px;
 }
 .site-info{
 	margin-left: -100px;
@@ -2198,7 +2197,7 @@ iPhone
 	height: 225px;
 }
 .madewith{
-	
+	  padding-top: 225px;
 }
 .menu-item{
 	padding-bottom: 5px;
@@ -2243,7 +2242,7 @@ a.sub-menu{
 }
 .postBox{
 	margin-left: 5px;
-	width: 450px;
+	width: 375px;
 }
 #main{
 	margin-left: 0px;
@@ -2376,8 +2375,8 @@ a.sub-menu{
 	margin-bottom: -150px;
 }
 .saveTheMusic{
-	width: 550px;
-	margin-left: 30px;	
+	width: 365px;
+	margin-left: 0px;	
 }
 #dBtnSMFix{
 	margin-left: 184px;
@@ -2396,6 +2395,10 @@ a.sub-menu{
 }
 .mFix{
 	margin-top: 115px;
+}
+#pressRoomFix{
+	width: 375px;
+  	margin-left: 15px;
 }
 /*--- end saveTheMusic ----------------------------*/
 /*--- whosWho --------------------------------------*/
@@ -2417,7 +2420,7 @@ a.sub-menu{
 	margin-left: 50px;
 }
 .saveTheMusicH{
-	margin-top: 50px;
+	margin-top: -125px;
 }
 /*--- directionsOthervistorInfo ----------------------*/
 #seatingM{
