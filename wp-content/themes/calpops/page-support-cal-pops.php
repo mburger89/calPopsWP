@@ -11,7 +11,7 @@ get_header(); ?>
 
 	<div id="supportCalPops" class="content-area">
 		<div >
-		<h1 class="headerT">Support <br>The<br>Pops</h1>
+		<h1 class="headerT iphoneHeader3">Support <br>The<br>Pops</h1>
 			<div class="rightBox" id="how4">
 				<a href="http://californiapops.tix.com/donation.asp?OrganizationNumber=201" class="donate" id="SupportDonate">Donate To The Pops</a>
 				<a href="http://californiapopsorchestra.tix.com/Schedule.aspx?OrgNum=201" class="buyBTN2" >Buy Tickets</a>

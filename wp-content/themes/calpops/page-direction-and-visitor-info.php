@@ -11,7 +11,7 @@ get_header(); ?>
 
 	<div id="pageDirections" class="content-area">
 		<div >
-		<h1 class="headerS">Directions<br>&<br>Visitor info.</h1>
+		<h1 class="headerS iphoneHeader2">Directions<br>&<br>Visitor info.</h1>
 			<div class="rightBox" id="how3">
 				<a href="http://californiapopsorchestra.tix.com/Schedule.aspx?OrgNum=201" class="buyBTN2" >Buy Tickets</a>
 				<h3 class="map"> Map of Smithwich Theater</h3>
