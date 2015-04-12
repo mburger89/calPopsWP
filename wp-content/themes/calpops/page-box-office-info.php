@@ -13,7 +13,7 @@ get_header(); ?>
 		<div>
 		<h1 class="headerT">Box <br>Office</h1>
 			<div class="rightBox" >
-				<a href="http://californiapopsorchestra.tix.com/Schedule.aspx?OrgNum=201" class="buyBTN2" >Buy Tickets</a>
+				<a href="http://californiapopsorchestra.tix.com/Schedule.aspx?OrgNum=201" class="buyBTN2 BOB" >Buy Tickets</a>
 				<h2 >Box Office Hours/Info</h2>
 				<p>Monday to Friday 9:00am-5:00pm</p>
 				<p>Closed Saturday and Sunday but leave messages for when we "Pop" into the office. When leaving a message you can hit # to skip our outgoing answering machine message.</p>

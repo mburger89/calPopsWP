@@ -2328,7 +2328,6 @@ div.ticketPrices a.buyBTN2 {
 }
 .iphoneHeader{
 	font-size: 100px;
-	font-size: 100px;
   	line-height: 100px;
 }
 .HTBB{
@@ -2343,8 +2342,11 @@ div.ticketPrices a.buyBTN2 {
 }
 .rightBox{
 	margin-top: 60px;
-  margin-left: 10px;
-  width: 360px;
+  	margin-left: 10px;
+  	width: 360px;
+}
+.BOB{
+	margin-right: 110px;
 }
 /*--- end boxOffice ------------------------*/
 /*--- howToBuy ----------------------------*/
