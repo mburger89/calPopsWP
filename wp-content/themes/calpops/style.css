@@ -911,6 +911,7 @@ body{
 /*--------------------------------------------------------------
 8.0 Clearings
 --------------------------------------------------------------*/
+.clearFix,
 .clear:before,
 .clear:after,
 .entry-content:before,
@@ -1641,15 +1642,14 @@ h1.entry-title8 a:hover{
 	margin-top: -10px;
 }
 /*--------------------Gallery-----------------------------------*/
-.entry-content9{
+.entry-content9 {
 	font-size: 20px;
 	text-decoration: none;
 	color: black;
 	margin-bottom: -5px;
 	margin-right: 50px;
-
 }
-.entry-content9 img{
+.entry-content9 img {
 	min-height: 50px;
 	max-height:300px;
 	min-width: 50px;
@@ -1659,17 +1659,29 @@ h1.entry-title8 a:hover{
 	margin-left: 5px;
 	float: left;
 }
-
-.gallery{
-	width: 700px;
+.entry-content10 img {
+  width: 300px;
+  display: block;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  float: left;
+}
+.entry-content10 {
+	margin-top: 25px;
+	margin-left: 125px;
+	float: left;
+}
+.gallery {
+	width: 850px;
 	background-color: #EBEBEB;
 	border-radius: 10px;
 	margin-top: 10px;
 	margin-left: 10px;
 	padding: 15px;
 	box-shadow: 0 3px 3px -1px #C2C2C2;
-	display: -webkit-flex;
-
+}
+.GTittle{
+	width: 600px;
 }
 /*--------------------------------------------------------------
 11.0 Infinite scroll
@@ -2120,7 +2132,7 @@ a.sub-menu{
 }
 
 /* ============================================================
-iPhone 
+iPhone 6
 ============================================================ */
 @media screen and (max-width: 400px){
 
@@ -2568,11 +2580,29 @@ div.ticketPrices a.buyBTN2 {
 }
 /*---- gallery ------------------------------------*/
 .gallery{
-	width: 365px;
-	float: none;
+	width: 300px;
+	margin-left: -5px;
 }
 .giPhone{
-	margin-top: -100px;	
+	margin-top: 25px;	
+}
+.GTittle{
+	clear: both;
+	width: 350px;
+	margin-left: -5px;
+}
+.entry-content10 img {
+  width: 200px;
+  display: block;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+.entry-content10{
+	margin-top: 50px;
+	margin-left: 10px;
+}
+.fixEverything{
+	margin-top: 50px
 }
 /*---- greenRoom ------------------------------------*/
 .greenRoomPage{
@@ -2583,6 +2613,7 @@ div.ticketPrices a.buyBTN2 {
 .postcontainerGR{
 	width: 350px;
 }
+
 /*-----------------------------------------------------*/
 /*---- Support the pops ------------------------------------*/
 #how4{

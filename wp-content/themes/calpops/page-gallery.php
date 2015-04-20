@@ -27,21 +27,14 @@ get_header(); ?>
 				
 				while(have_posts()) : the_post(); ?>
 				
-				<div class="gallery">
+				<div class="gallery clearFix">
 					
-				<h1 class="entry-title4"><a href="<?#php the_permalink(); ?>"> </a><?php the_title(); ?></h1>
-					<div class="entry-content9">
-						<?php the_post_thumbnail(); ?>
-						<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'calpops' ) ); ?>
-								<?php
-						wp_link_pages( array(
-							'before' => '<div class="page-links">' . __( 'Pages:', 'calpops' ),
-							'after'  => '</div>',
-							) );
-						?>
-					</div><!-- .entry-content -->
-					
+				<div class="GTittle"><h1 class="entry-title4"><a href="<?#php the_permalink(); ?>"> </a><?php the_title(); ?></h1></div>
+					<div class="entry-content10">
 
+						<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'calpops' ) ); ?>
+								
+					</div><!-- .entry-content -->
 				</div>
 				
 		<?php endwhile; wp_reset_query(); ?>
