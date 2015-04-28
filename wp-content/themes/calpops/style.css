@@ -397,6 +397,16 @@ a:hover.buyBTN2{
 	top: 125px;
 	line-height: 120px;
 }
+.headerF{
+	position: relative;
+	left: 100px;
+	font-size: 100px;
+	color: #00AEEF;
+	font-weight: bold;
+	top: 125px;
+	line-height: 120px;
+}
+
 .headerW{
 	position: relative;
 	left: 125px;
@@ -985,6 +995,28 @@ body{
 	box-shadow: 0 3px 3px -1px #C2C2C2;
 }
 
+.donateF{
+	width: 200px;
+	height: 55px;
+	float: left;
+	padding-left: 16px;
+	padding-top: 16px;
+	background-color: #00AEEF;
+	border-radius: 10px;
+	box-shadow: 0 3px 3px -1px #C2C2C2;
+	color: #fff;
+	letter-spacing: 0.0625em;
+	font-size: 16px;
+	margin-bottom: 20px;
+	margin-top: -55px;
+	margin-left: 650px;
+}
+a.donateF:visited{
+	color: #fff;
+}
+a.donateF:hover{
+	color: #eee;
+}
 /*--------------------------------------------------------------
 10.0 Content
 --------------------------------------------------------------*/

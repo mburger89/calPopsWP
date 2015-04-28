@@ -15,7 +15,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 			<div>
-		<h1 class="headerT">Hello!</h1>
+		<h1 class="headerF">Welcome!</h1>
 			<div class="headerP">
 				<p>
 					I'm Kim, 
@@ -38,6 +38,7 @@ get_header(); ?>
 			</div>
 			<div class="FPosttittle">
 			<h2 class="postsTittle">Whats Happening at CalPops?</h2> 
+				<a href="http://californiapops.tix.com/donation.asp?OrganizationNumber=201" class="donateF">Donate To The Pops</a>
 				<a href="http://californiapopsorchestra.tix.com" class="buyBTN">Buy Tickets</a>
 			</div>
 		</div>
