@@ -860,7 +860,7 @@ a.sub-menu{
 7.0 Alignments
 --------------------------------------------------------------*/
 body{
-	background-color: #000;
+	background-color: #0A0A0A ;
 }
 #page{
 	width: 1270px;
@@ -996,20 +996,20 @@ body{
 }
 
 .donateF{
-	width: 200px;
+	width: 225px;
 	height: 55px;
 	float: left;
-	padding-left: 16px;
+	padding-left: 20px;
 	padding-top: 16px;
 	background-color: #00AEEF;
 	border-radius: 10px;
 	box-shadow: 0 3px 3px -1px #C2C2C2;
 	color: #fff;
-	letter-spacing: 0.0625em;
+	letter-spacing: 0.125em;
 	font-size: 16px;
 	margin-bottom: 20px;
 	margin-top: -55px;
-	margin-left: 650px;
+	margin-left: 625px;
 }
 a.donateF:visited{
 	color: #fff;
@@ -1802,6 +1802,27 @@ object {
 	max-width: 11.11%;}
 .gallery-caption {
 	display: block;}
+
+/*--------------------------------------------------------------
+14.5 Custom Page
+--------------------------------------------------------------*/
+
+.postcontainerC{
+	width: 960px;
+	margin-left: 150px;
+	margin-top: 175px;
+	display: block;
+	float: left;
+	overflow: hidden;
+	/*height: 320px;*/
+	border-radius: 10px;
+	box-shadow: 0 3px 3px -1px #C2C2C2;
+	background-color: #EBEBEB;
+	word-wrap: break-word;
+	margin-bottom: 20px;
+}
+
+
 /*--------------------------------------------------------------
 12.5 Extra fixes
 --------------------------------------------------------------*/
@@ -2310,6 +2331,20 @@ a.sub-menu{
 	margin-top: 150px;
 	width: 300px;
 }
+.headerF {
+  position: relative;
+  left: 10px;
+  font-size: 75px;
+  top: 25px;
+  color: #00AEEF;
+  font-weight: bold;
+  line-height: 120px;
+}
+.donateF{
+	margin-left: 75px;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
 /*----- big post classes -------*/
 
 .upComingShow{
@@ -2669,6 +2704,16 @@ div.ticketPrices a.buyBTN2 {
 	line-height: 85px;
 	width: 300px;
 	
+}
+/*---- CustomPage ------------------------------------*/
+.postcontainerC{
+	width: 350px;
+	margin-left: 13px;
+	margin-top: 75px;
+}
+.CPmobile{
+	font-size: 65px;
+	width: 360px;
 }
 /*-----------------------------------------------------*/
 }

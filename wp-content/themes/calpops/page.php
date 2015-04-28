@@ -14,10 +14,10 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<div>
-		<h1 class="headerT">Hello!</h1>
+		<h1 class="headerT CPmobile"><?php the_title(); ?></h1>
 			
 		</div>
-		<main id="main" class="site-main" role="main">
+		<main id="main8" class="site-main" role="main">
 			<?php if ( have_posts() ) : ?>
 			
 			<!-- Start the Loop-->
@@ -28,7 +28,7 @@ get_header(); ?>
 					 * If you want to override this in a child theme, then include a file
 					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 					 */
-					get_template_part( 'content', get_post_format() );
+					get_template_part( 'content-page', get_post_format() );
 				?>
 
 			<?php endwhile; ?>
@@ -37,9 +37,11 @@ get_header(); ?>
 
 		<?php else : ?>
 
-			<?php get_template_part( 'content', 'none' ); ?>
+			<?php get_template_part( 'content-page', 'none' ); ?>
 
 		<?php endif; ?>
+		
+			<!-- Start the Loop-->
 			
 
 		</main><!-- #main -->
