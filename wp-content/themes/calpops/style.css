@@ -49,6 +49,7 @@ and Blueprint http://www.blueprintcss.org/
 	12.2 - Galleries
 12.5 Extra fixes
 13.0 Media Queries
+14.0 Custom Pages
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -247,14 +248,7 @@ h3{
 	letter-spacing: .0625em;
 	font-weight: bold;
 }
-.site-branding{
-	font-size: 20px;
-	color: #fff;
-	background-image: url("images/logo.png");
-	width: 800px;
-	height: 60px;
-	background-repeat: no-repeat;
-}
+
 .buyBTN {
 	color: #fff;
 	font-size: 20px;
@@ -645,8 +639,16 @@ textarea {
 .site-branding{
 	position: absolute;
 	top: 60px;
-	left: 50px;
+	left: 10px;
 	z-index: 1500;
+}
+.site-branding{
+	font-size: 20px;
+	color: #fff;
+	background-image: url("images/Sample-web-header-image-larger-logo-v2Yel.png");
+	width: 2200px;
+	height: 226px;
+	background-repeat: no-repeat;
 }
 .site-footer{
 	height: 100px;
@@ -1804,7 +1806,7 @@ object {
 	display: block;}
 
 /*--------------------------------------------------------------
-14.5 Custom Page
+14.0 Custom Pages
 --------------------------------------------------------------*/
 
 .postcontainerC{
@@ -1868,8 +1870,8 @@ object {
 @media screen and (min-width: 1300px){
 .site-branding{
 	position: absolute;
-	top: 60px;
-	left: 200px;
+	top: 10px;
+	left: 120px;
 	z-index: 1500;
 	}
 }
@@ -1977,7 +1979,7 @@ a.sub-menu{
 #content.site-content{
 	width: 640px;
 }
-/*---navigation---------------------------------------------------*/
+/*--- end navigation---------------------------------------------------*/
 /*---Index.php--------------------------*/
 
 
@@ -1994,7 +1996,7 @@ a.sub-menu{
 .postsTittle{
 	margin-left: 30px;
 }
-/*---Index.php--------------------------*/
+/*--- end Index.php--------------------------*/
 /*---ticketPrices-----------------------*/
 .ticketPrices{
 	margin-left: 75px;
@@ -2121,7 +2123,7 @@ a.sub-menu{
 .entry-title0{
 	width: 400px;
 }
-/*--- endwhosWho --------------------------------------*/
+/*--- end whosWho --------------------------------------*/
 /*--- currentVolunteerOpennings ----------------------*/
 .moreInfo{
 	margin-left: 50px;
@@ -2168,7 +2170,7 @@ a.sub-menu{
 .postcontainerGR{
 	width: 550px;
 }
-/*-----------------------------------------------------*/
+/*--------- end green room --------------------------------------*/
 /*---- Support the pops ------------------------------------*/
 #how4{
 	margin-top: 200px;
@@ -2206,7 +2208,11 @@ iPhone 6
 /*---navigation------------------------------------------------*/
 .site-branding{
 	top: 10px;
-	left: 5px;
+	left: 10px;
+	background-image: url("images/Sample-web-header-image-larger-logo-v2Yel-mobile.png");
+	width: 360px;
+	height: 46px;
+	background-repeat: no-repeat;
 }
 .headerSS{
 	height:125px;
